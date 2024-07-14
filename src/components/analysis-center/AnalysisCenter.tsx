@@ -22,8 +22,8 @@ export const AnalysisCenter: FC = () => {
               Медицинские анализы
             </Typography>
             <ul>
-              {listItems.map((item) => (
-                <li className={styles.listItem}>
+              {listItems.map((item, id) => (
+                <li key={id} className={styles.listItem}>
                   <Typography className={styles.listItem} variant="h5">
                     {item}
                   </Typography>

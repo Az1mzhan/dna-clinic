@@ -1,36 +1,18 @@
 import { FC } from "react";
-import { Equipment } from "../../types/Equipment";
+import { EquipmentCard } from "../equipment-card/EquipmentCard";
 import { Box, Typography } from "@mui/material";
+import styles from "./equipmentSection.module.css";
 
-const defaultEquipment: Equipment = {
-  naming: "МРТ",
-  features: [
-    "1,5 тесла / до 200 кг",
-    "3Д/4Д запись исследования",
-    "МР Маммография",
-    "МРТ всего тело за 1.5 часа",
-    "МРТ суставов",
-  ],
-};
-
-interface Props {
-  equipment: Equipment;
-}
-
-export const EquipmentSection: FC<Props> = ({
-  equipment = defaultEquipment,
-}: Props) => {
+export const EquipmentSection: FC = () => {
   return (
     <>
-      <Box>
-        <Typography>{equipment.naming}</Typography>
-        <ul>
-          {equipment.features.map((feature, id) => (
-            <li key={id}>
-              <Typography></Typography>
-            </li>
+      <Box className={styles.equipmentSection}>
+        <Typography>Технологии и оборудования</Typography>
+        <Box className={styles.cardsContainer}>
+          {Array.from({ length: 3 }).map((item, id) => (
+            <EquipmentCard key={id} />
           ))}
-        </ul>
+        </Box>
       </Box>
     </>
   );
