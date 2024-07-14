@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 3.255vw !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.header {
+  display: flex;
+  width: 90%;
+  padding-top: 5vh;
+}
+
+.headerContent {
+  display: flex;
+}
+
+.companyTitle {
+  color: #3C79FF;
+  font-weight: 800 !important;
+  line-height: 36.31px !important;
+  letter-spacing: 0.05em !important;
+  text-align: left !important;
+}
+
+.phoneSection {
+  display: flex;
+  gap: 1vw;
+  margin-left: 4.232vw;
+  margin-right: 0.651vw;
+}
+
+.phoneContainer {
+  color: black;
+}
+
+.aroundClockLabel {
+  font-family: "Inter", sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 500 !important;
+  line-height: 10.89px !important;
+  letter-spacing: 0.05em !important;
+  text-align: center !important;
+}
+
+.aroundClockPhone {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 21.94px !important;
+  letter-spacing: 0.05em !important;
+  text-align: left !important;
+}
+
+.headerButtonsGroup {
+  display: flex;
+  gap: 0.651vw;
+}
+
+.personalCabinetBtn {
+  gap: 0.5vw;
+  background-color: white !important;
+  color: #3c79ff !important;
+  border: 0.125vw solid #3c79ff !important;
+}
+
+/*# sourceMappingURL=header.module.css.map */

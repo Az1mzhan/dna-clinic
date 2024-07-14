@@ -1,0 +1,10 @@
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.cardIcon {
+  height: 100%;
+}
+
+/*# sourceMappingURL=serviceCard.module.css.map */

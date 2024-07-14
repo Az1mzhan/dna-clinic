@@ -1,0 +1,93 @@
+@use "../../App" as styles
+
+.medicCard
+  display: flex
+  margin-top: 7.5vh
+  padding: 10vh 3.75vw
+  background-color: white
+
+.medicAvatar
+  width: 10vw
+  height: 27.5vh
+  background-color: rgba(234, 234, 234, 0.53)
+
+.medicInfoBtn
+  width: 10vw !important
+  color: black !important
+  border: .0625vw solid #e0e0e0
+  border-radius: 1vw !important
+
+.medicInfoTypography
+  font-family: styles.$inter-font !important
+  font-weight: bold !important
+
+  &:nth-child(2)
+    color: styles.$primary-color
+
+.primaryInfo, .secondaryInfo
+  display: flex
+  flex-direction: column
+  gap: 5vh
+
+.primaryInfo
+  margin-left: 5vw
+
+.secondaryInfo
+  align-items: center
+
+.listTitle
+  font-weight: bold !important
+
+.listTitle, .listItem
+  font-family: styles.$montserrat-font !important
+
+.fullName
+  font-family: styles.$montserrat-font !important
+  font-weight: bold !important
+
+.occupation
+  color: styles.$primary-color
+  font-family: styles.$inter-font !important
+  font-weight: bold !important
+
+.recordToDoctorButton
+  width: 17.5vw !important
+  margin-top: 2vh !important
+
+.actionButtons
+  display: flex
+  flex-direction: column
+  gap: 3.75vh
+  margin-left: 7.5vw
+  margin-right: 2.5vw
+
+.actionBtn
+  width: 20vw !important
+  height: 8.75vh !important
+  color: black !important
+  border: .125vw solid #e0e0e0 !important
+  border-radius: .75vw !important
+  justify-content: flex-start !important
+
+.actionBtnIcon
+  margin-left: .5vw
+
+.actionBtnTitle
+  font-size: .8rem !important
+  font-family: styles.$inter-font !important
+
+.actionBtnInfo
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-left: 1vw
+
+.actionBtnMedicName
+  font-size: .5rem !important
+  font-family: styles.$inter-font !important
+  font-weight: bold !important
+
+.contactPhone
+  color: styles.$primary-color
+  font-family: styles.$montserrat-font !important
+  font-weight: bold !important

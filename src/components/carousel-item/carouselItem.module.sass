@@ -1,0 +1,34 @@
+@use "../../App" as styles
+
+.featureList
+  display: flex
+  gap: 5vw
+
+.slideContainer
+  width: 100% !important
+  min-height: 175px !important
+  height: auto !important
+  background-image: url("../../assets/vector_bg.svg")
+  background-position: center
+  background-size: 100% 100%
+  background-repeat: no-repeat
+
+.slideTitle, .listItem
+  font-family: styles.$montserrat-font !important
+  font-weight: bold !important
+
+.slideTitle
+  position: relative
+  left: 10vw
+  top: 5vh
+
+.featureList
+  position: relative
+  left: 18.75vw
+  top: 5vh
+  display: flex
+  align-items: center
+
+  li
+    &:last-child
+      list-style-type: none
