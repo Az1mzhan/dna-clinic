@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { Box, Button, ListItem, styled, Typography } from "@mui/material";
+import { Box, Button, styled, Typography } from "@mui/material";
 import styles from "./carouselItem.module.css";
 
 interface Props {
@@ -16,17 +16,9 @@ export const CarouselItem: FC<Props> = ({
 
   if (isDefaultTemplate)
     return (
-      <Box className={styles.slideContainer}>
+      <Box className={styles.slideContainer} sx={{ borderRadius: 10 }}>
         <Box>
-          <Typography
-            className={styles.slideTitle}
-            sx={{
-              backgroundColor: {
-                xs: "red",
-                sm: "transparent",
-              },
-            }}
-          >
+          <Typography className={styles.slideTitle}>
             Центр диагностики и лечения
           </Typography>
           <Box
@@ -38,8 +30,12 @@ export const CarouselItem: FC<Props> = ({
                 sm: "row",
               },
               alignItems: {
-                xs: "flex-end",
+                xs: "flex-start",
                 sm: "center",
+              },
+              rowGap: {
+                xs: "1vh",
+                sm: "normal",
               },
               marginLeft: {
                 sm: "0.607%",
@@ -90,6 +86,7 @@ export const CarouselItem: FC<Props> = ({
               <Button
                 className="secondaryBtn"
                 sx={{
+                  width: "fit-content !important",
                   marginLeft: {
                     xs: "0",
                     sm: "2.5vw",
