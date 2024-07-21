@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Box, Typography } from "@mui/material";
-import styles from "./clinicDescription.module.css?v=1.0.1";
+import styles from "./clinicDescription.module.css";
 
 export const ClinicDescription: FC = () => {
   return (

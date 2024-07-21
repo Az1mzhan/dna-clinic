@@ -2,7 +2,7 @@ import { FC } from "react";
 import { DiagnosisBannerComponent } from "../diagnosis-banner-component/DiagnosisBannerComponent";
 import { defaultDiagnosesBanners } from "../../types/DiagnosisBanner";
 import { Box, Button, Typography } from "@mui/material";
-import styles from "./endoscopyBanner.module.css?v=1.0.1";
+import styles from "./endoscopyBanner.module.css";
 
 export const EndoscopyBanner: FC = () => {
   const banner = defaultDiagnosesBanners[0];

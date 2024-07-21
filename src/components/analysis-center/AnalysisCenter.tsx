@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import analysis from "../../assets/analysis.svg";
-// import styles from "./analysisCenter.module.css?v=1.0.1";
+import styles from "./analysisCenter.module.css";
 
 export const AnalysisCenter: FC = () => {
   const listItems = [
@@ -25,7 +25,7 @@ export const AnalysisCenter: FC = () => {
               {listItems.map((item, id) => (
                 <li key={id} className={styles.listItem}>
                   <Typography className={styles.listItem} variant="h5">
-                    {item}
+                    `{item}
                   </Typography>
                 </li>
               ))}

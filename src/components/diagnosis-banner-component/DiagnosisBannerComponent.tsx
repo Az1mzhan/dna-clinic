@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { DiagnosisBanner } from "../../types/DiagnosisBanner";
 import { Box, Button, Divider, Typography } from "@mui/material";
-import styles from "./diagnosisBannerComponent.module.css?v=1.0.1";
+import styles from "./diagnosisBannerComponent.module.css";
 
 interface Props {
   banner: DiagnosisBanner;

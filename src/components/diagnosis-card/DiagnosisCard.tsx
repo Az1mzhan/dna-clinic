@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { DiagnosisMethod } from "../../types/DiagnosisMethod";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
-import styles from "./diagnosisCard.module.css?v=1.0.1";
+import styles from "./diagnosisCard.module.css";
 
 interface Props {
   diagnosis: DiagnosisMethod;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { CarouselItem } from "../carousel-item/CarouselItem";
 import Carousel from "react-material-ui-carousel";
-import styles from "./mainCarousel.module.css?v=1.0.1";
+import styles from "./mainCarousel.module.css";
 
 export const MainCarousel: FC = () => {
   return (

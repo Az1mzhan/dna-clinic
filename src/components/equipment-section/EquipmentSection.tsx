@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { EquipmentCard } from "../equipment-card/EquipmentCard";
 import { Box, Typography } from "@mui/material";
-import styles from "./equipmentSection.module.css?v=1.0.1";
+import styles from "./equipmentSection.module.css";
 
 export const EquipmentSection: FC = () => {
   return (

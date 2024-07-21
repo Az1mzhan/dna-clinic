@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import search from "../../assets/search.svg";
-import styles from "./navbar.module.css?v=1.0.1";
+import styles from "./navbar.module.css";
 
 export const Navbar: FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

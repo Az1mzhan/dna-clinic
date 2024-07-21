@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { SmallMedicCard } from "../small-medic-card/SmallMedicCard";
 import { Box, Typography } from "@mui/material";
-import styles from "./ourMedics.module.css?v=1.0.1";
+import styles from "./ourMedics.module.css";
 
 export const OurMedics: FC = () => {
   return (

@@ -12,7 +12,7 @@ import styles from "./header.module.css";
 import phoneIcon from "../../assets/phone.svg";
 import personIcon from "../../assets/person.svg";
 import personBlackIcon from "../../assets/person_black.svg";
-import "../../App.css?v=1.0.1";
+import "../../App.css";
 
 export const Header: FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

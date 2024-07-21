@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import handset from "../../assets/handset.svg";
 import mail from "../../assets/mail.svg";
 import instagram from "../../assets/instagram.svg";
-import styles from "./footer.module.css?v=1.0.1";
+import styles from "./footer.module.css";
 
 export const Footer: FC = () => {
   const sections = ["О нас", "Услуги", "Контакты"];

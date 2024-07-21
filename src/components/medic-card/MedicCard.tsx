@@ -3,7 +3,7 @@ import { Medic } from "../../types/Medic";
 import { Box, Button, Typography } from "@mui/material";
 import bluePhone from "../../assets/phone_blue.svg";
 import file from "../../assets/file.svg";
-import styles from "./medicCard.module.css?v=1.0.1";
+import styles from "./medicCard.module.css";
 
 const defaultMedic: Medic = {
   fullName: "Величко Светлана Михайловна",
