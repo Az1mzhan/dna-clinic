@@ -1,5 +1,11 @@
 .carousel {
-  width: 90vw;
+  width: 87.5vw;
+  min-height: 175px;
+  height: auto;
+}
+
+.css-1l7c0cy > div {
+  transform-origin: 0 !important;
 }
 
 /*# sourceMappingURL=mainCarousel.module.css.map */

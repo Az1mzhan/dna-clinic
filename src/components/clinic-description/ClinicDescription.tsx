@@ -5,8 +5,8 @@ import styles from "./clinicDescription.module.css";
 export const ClinicDescription: FC = () => {
   return (
     <>
-      <Box className={styles.descriptionContainer} sx={{ borderRadius: 4 }}>
-        <Typography className={styles.descriptionTitle} variant="h4">
+      <Box className={styles.descriptionContainer}>
+        <Typography className={styles.descriptionTitle}>
           ДНК - Клиник
         </Typography>
         <Typography className={styles.descriptionInfo} variant="h6">

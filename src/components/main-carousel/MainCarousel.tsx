@@ -6,8 +6,8 @@ import styles from "./mainCarousel.module.css";
 export const MainCarousel: FC = () => {
   return (
     <>
-      <Carousel className={styles.carousel}>
-        {Array.from({ length: 3 }).map((item, id) => (
+      <Carousel className={styles.carousel} navButtonsAlwaysInvisible={true}>
+        {Array.from({ length: 1 }).map((item, id) => (
           <CarouselItem key={id} />
         ))}
       </Carousel>

@@ -1,0 +1,91 @@
+@use "../../App" as styles
+
+.card
+  display: flex
+  flex-direction: column
+  min-width: 346px !important
+  border: 1px solid #cccccc
+  border-radius: 10px
+
+  > div
+    display: flex
+
+    &:nth-child(2)
+      button
+        width: 100% !important
+        padding: 8px 11% !important
+        color: black !important
+        border: 0.2px solid #cccccc
+        border-radius: 0.781vw !important
+
+
+    &:nth-child(3)
+      flex-direction: column
+
+.buttonText
+  text-align: center
+  font-size: 10pt
+  font-weight: 600
+  font-family: styles.$inter-font
+  letter-spacing: 0.05em
+  line-height: 10px
+
+.buttonQuantity
+  color: styles.$primary-color
+
+.avatarContainer
+  width: 7.578vw
+  height: 134px
+  margin-left: 10.116%
+  margin-top: 28px
+  border-radius: 4px
+  background-color: rgba(234, 234, 234, 0.53)
+
+.initialInfoContainer
+  margin-top: 35px
+
+.fullName, .occupation
+  font-weight: 600
+  letter-spacing: 0.05em
+
+.fullName
+  width: 32.659%
+  font-size: 12pt
+  line-height: 15px
+  font-family: styles.$montserrat-font
+
+.occupation
+  margin-top: 15px
+  color: styles.$primary-color
+  font-size: 10pt
+  line-height: 12px
+  font-family: styles.$inter-font
+
+.infoButtonsContainer
+  display: flex
+  flex-direction: column
+  gap: 11px !important
+  width: 28.902% !important
+  margin-left: 10.116%
+  margin-top: 38px
+
+.briefSpecialty
+  margin-left: 0.938vw
+  margin-top: 38px
+
+.briefSpecialtyLabel
+  font-size: 9pt
+  font-weight: 500
+  font-family: styles.$inter-font
+  letter-spacing: 0.05em
+  line-height: 11px
+
+.briefSpecialtyText
+  font-size: 12pt
+  font-weight: 600
+  font-family: styles.$inter-font
+  letter-spacing: 0.05em
+  line-height: 15px
+
+.firstRow
+  gap: 1.172vw

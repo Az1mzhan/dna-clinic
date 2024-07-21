@@ -20,7 +20,7 @@ button {
   border-radius: 3.255vw !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   text-transform: none !important;
   text-align: center !important;
   line-height: 61px !important;
@@ -36,18 +36,16 @@ button {
   background-color: #ff8c00 !important;
 }
 
-.featureList {
-  display: flex;
-  gap: 5vw;
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .slideContainer {
-  width: 100% !important;
-  min-height: 175px !important;
-  height: auto !important;
+  width: 87.5vw;
+  height: auto;
   background-image: url("../../assets/vector_bg.svg");
-  background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -57,20 +55,31 @@ button {
 }
 
 .slideTitle {
-  position: relative;
-  left: 10vw;
-  top: 5vh;
+  margin-left: 10.268%;
+  margin-top: 23px;
+  font-size: 30px;
 }
 
 .featureList {
-  position: relative;
-  left: 18.75vw;
-  top: 5vh;
   display: flex;
-  align-items: center;
+  margin-top: 21px;
+  margin-bottom: 44px;
+}
+.featureList li {
+  font-family: "Montserrat", sans-serif;
+}
+.featureList li p {
+  font-size: 20px;
+  font-weight: 600 !important;
 }
 .featureList li:last-child {
   list-style-type: none;
+}
+.featureList li:last-child button {
+  font-size: 13px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=carouselItem.module.css.map */

@@ -7,7 +7,9 @@ export const EquipmentSection: FC = () => {
   return (
     <>
       <Box className={styles.equipmentSection}>
-        <Typography>Технологии и оборудования</Typography>
+        <Typography className={styles.sectionTitle}>
+          Технологии и оборудования
+        </Typography>
         <Box className={styles.cardsContainer}>
           {Array.from({ length: 3 }).map((item, id) => (
             <EquipmentCard key={id} />

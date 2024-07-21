@@ -2,47 +2,74 @@
 
 .header
   display: flex
-  width: 90%
+  width: 100%
   padding-top: 5vh
 
 .headerContent
   display: flex
 
+.drawer
+  background-color: black !important
+
 .companyTitle
+  margin-left: 5.9375vw !important
   color: #3C79FF
+  font-size: 30px !important
   font-weight: 800 !important
-  line-height: 36.31px !important
+  line-height: 36px !important
   letter-spacing: 0.05em !important
   text-align: left !important
+  white-space: nowrap
 
 .phoneSection
   display: flex
-  gap: 1vw
-  margin-left: 4.232vw
-  margin-right: 0.651vw
+  gap: 2.66%
+  margin-right: 0.86vw !important
 
 .phoneContainer
+  display: flex
+  flex-direction: column
+  align-items: flex-start
   color: black
 
 .aroundClockLabel
+  height: 50%
+  color: #7A7A7A
   font-family: styles.$inter-font !important
   font-size: 9px !important
   font-weight: 500 !important
-  line-height: 10.89px !important
+  line-height: 11px !important
   letter-spacing: 0.05em !important
-  text-align: center !important
+  white-space: nowrap
 
 .aroundClockPhone
+  height: 50%
   font-family: styles.$montserrat-font !important
   font-size: 18px !important
   font-weight: 700 !important
-  line-height: 21.94px !important
+  line-height: 22px !important
   letter-spacing: 0.05em !important
-  text-align: left !important
+  white-space: nowrap
 
 .headerButtonsGroup
+  margin-left: 1.092vw
   display: flex
-  gap: 0.651vw
+  gap: 0.9375vw
+
+  button
+    font-weight: bold !important
+
+    &:first-child
+      width: 14.14vw !important
+
+    &:nth-child(2)
+      width: 11.484vw !important
+
+    &:nth-child(3)
+      width: 13.906vw !important
+
+    &:nth-child(4)
+      width: 12.578vw !important
 
 .personalCabinetBtn
   gap: .5vw

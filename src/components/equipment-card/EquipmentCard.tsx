@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { Equipment } from "../../types/Equipment";
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import mri from "../../assets/mri.svg";
+import styles from "./equipmentCard.module.css";
 
 const defaultEquipment: Equipment = {
   naming: "МРТ",
@@ -24,17 +25,27 @@ export const EquipmentCard: FC<Props> = ({
 }: Props) => {
   return (
     <>
-      <Card>
-        <CardMedia image={equipment.icon} />
-        <CardContent>
-          <Typography>{equipment.naming}</Typography>
-          <ul>
-            {equipment.features.map((feature, id) => (
-              <li key={id}>
-                <Typography>{feature}</Typography>
-              </li>
-            ))}
-          </ul>
+      <Card className={styles.equipmentCard} sx={{ borderRadius: 3 }}>
+        <CardMedia
+          className={styles.cardImage}
+          component="img"
+          image={equipment.icon}
+        />
+        <CardContent className={styles.cardContent}>
+          <Box className={styles.infoContainer} sx={{ borderRadius: 3 }}>
+            <Typography className={styles.equipmentNaming}>
+              {equipment.naming}
+            </Typography>
+            <ul className={styles.featuresList}>
+              {equipment.features.map((feature, id) => (
+                <li key={id}>
+                  <Typography className={styles.equipmentFeature}>
+                    {feature}
+                  </Typography>
+                </li>
+              ))}
+            </ul>
+          </Box>
         </CardContent>
       </Card>
     </>

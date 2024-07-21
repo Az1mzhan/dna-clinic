@@ -20,7 +20,7 @@ button {
   border-radius: 3.255vw !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   text-transform: none !important;
   text-align: center !important;
   line-height: 61px !important;
@@ -36,45 +36,68 @@ button {
   background-color: #ff8c00 !important;
 }
 
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: center;
+  row-gap: 5vh;
   align-items: center;
-  gap: 20vw;
   width: 100%;
-  height: 40vh;
+  min-height: 221px;
   background-color: #3c79ff;
   color: white;
-}
-
-.flagmanColumn {
-  align-items: center;
 }
 
 .footerColumn {
   display: flex;
   flex-direction: column;
-  gap: 2.5vh;
+}
+
+.flagmanColumn {
+  align-items: center;
+  margin-left: 15.703vw;
+}
+
+.sectionsColumn {
+  gap: 26.22px;
+  margin-left: 15.469vw;
+}
+
+.contactsColumn {
+  gap: 24.07px;
+  margin-left: 18.281vw;
 }
 
 .companyName {
+  font-size: 30px !important;
   font-weight: bold !important;
   font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 0 !important;
+  line-height: 80px !important;
+  white-space: nowrap;
 }
 
 .contactUsBtn {
-  width: 17.5vw !important;
+  width: 221px !important;
+  padding: 11.7px 0 !important;
 }
 
 .contactUsTypography {
-  font-weight: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
+  letter-spacing: 0 !important;
+  line-height: 15px !important;
 }
 
 .section {
+  font-size: 16px !important;
   font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
 }

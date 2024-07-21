@@ -1,16 +1,10 @@
 @use "../../App" as styles
 
-.featureList
-  display: flex
-  gap: 5vw
-
 .slideContainer
-  width: 100% !important
-  min-height: 175px !important
-  height: auto !important
+  width: 87.5vw
+  height: auto
   background-image: url("../../assets/vector_bg.svg")
-  background-position: center
-  background-size: 100% 100%
+  background-size: cover
   background-repeat: no-repeat
 
 .slideTitle, .listItem
@@ -18,17 +12,27 @@
   font-weight: bold !important
 
 .slideTitle
-  position: relative
-  left: 10vw
-  top: 5vh
+  margin-left: 10.268%
+  margin-top: 23px
+  font-size: 30px
 
 .featureList
-  position: relative
-  left: 18.75vw
-  top: 5vh
   display: flex
-  align-items: center
+  margin-top: 21px
+  margin-bottom: 44px
 
   li
+    font-family: styles.$montserrat-font
+
+    p
+      font-size: 20px
+      font-weight: 600 !important
+
     &:last-child
       list-style-type: none
+
+      button
+        font-size: 13px !important
+        font-family: styles.$montserrat-font !important
+        font-weight: bold !important
+        line-height: 16px
