@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { MedicCard } from "../../components/medic-card/MedicCard";
 import { Box } from "@mui/material";
-import styles from "./medicsPage.module.css";
+import styles from "./medicsPage.module.css?v=1.0.1";
 
 const MedicsPage: FC = () => {
   return (

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import analysis from "../../assets/analysis.svg";
-import styles from "./analysisCenter.module.css";
+import styles from "./analysisCenter.module.css?v=1.0.1";
 
 export const AnalysisCenter: FC = () => {
   const listItems = [

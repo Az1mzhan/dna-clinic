@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Equipment } from "../../types/Equipment";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import mri from "../../assets/mri.svg";
-import styles from "./equipmentCard.module.css";
+import styles from "./equipmentCard.module.css?v=1.0.1";
 
 const defaultEquipment: Equipment = {
   naming: "МРТ",

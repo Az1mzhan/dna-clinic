@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { MainCarousel } from "../../components/main-carousel/MainCarousel";
 import { ClinicDescription } from "../../components/clinic-description/ClinicDescription";
 import { AnalysisCenter } from "../../components/analysis-center/AnalysisCenter";
 import { OurMedics } from "../../components/our-medics/OurMedics";

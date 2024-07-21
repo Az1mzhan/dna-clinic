@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ServiceObject } from "../../types/ServiceObject";
 import { Box, Typography } from "@mui/material";
-import styles from "./serviceCard.module.css";
+import styles from "./serviceCard.module.css?v=1.0.1";
 
 interface Props {
   service: ServiceObject;

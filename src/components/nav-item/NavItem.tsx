@@ -1,6 +1,6 @@
 import { FC } from "react";
-import styles from "./navItem.module.css";
 import { Link } from "@mui/material";
+import styles from "./navItem.module.css?v=1.0.1";
 
 interface Props {
   item: { title: string; url: string };
