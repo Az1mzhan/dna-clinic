@@ -1,6 +1,6 @@
 import { FC, ReactNode } from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
-import styles from "./carouselItem.module.css?v=1.0.1";
+// import styles from "./carouselItem.module.css?v=1.0.1";
 
 interface Props {
   isDefaultTemplate?: boolean;
