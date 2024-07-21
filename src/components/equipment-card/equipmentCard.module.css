@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 3.255vw !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.equipmentCard {
+  width: 27.031vw;
+}
+
+.cardImage {
+  width: 58.671%;
+  padding: 30px 20.52% 18px;
+}
+
+.cardContent {
+  padding: 0 !important;
+}
+
+.infoContainer {
+  background-color: rgba(234, 234, 234, 0.33);
+  margin: 0 16px 16px 16px;
+  padding-left: 20px;
+}
+
+.equipmentNaming, .equipmentFeature {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 61px;
+}
+
+.equipmentNaming {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.featuresList {
+  margin: 0;
+}
+
+.equipmentFeature {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=equipmentCard.module.css.map */
