@@ -12,22 +12,36 @@ export const defaultAnalysesLinks: AnalysisLink[] = [
   {
     title: "Подготовка к сдаче анализов",
     icon: flatBottomedFlask,
-    bgColor: "#F9D100",
+    bgColor: "#f9d100",
   },
   {
     title: "Как получить результаты",
     icon: results,
-    bgColor: "#EA9023",
+    bgColor: "#ea9023",
   },
   {
     title: "Цены",
     icon: cost,
-    bgColor: "#00AE5B",
+    bgColor: "#00ae5b",
+  },
+  {
+    title: "Калькулятор анализов",
+    description: "Быстрый поиск анализов и цен",
+    bgColor: "#ea9023",
+    isDetails: true,
+  },
+  {
+    title: "Комплексные анализы",
+    description: "Комплексная лабораторная диагностика",
+    bgColor: "#00a355",
+    isDetails: true,
   },
 ];
 
 export interface AnalysisLink {
   title: string;
-  icon: string;
+  description?: string;
+  icon?: string;
   bgColor: string;
+  isDetails?: boolean;
 }

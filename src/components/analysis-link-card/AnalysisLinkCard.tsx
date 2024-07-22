@@ -1,17 +1,30 @@
 import { FC } from "react";
 import { AnalysisLink } from "../../types/AnalysisLink";
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 interface Props {
   link: AnalysisLink;
 }
 
 export const AnalysisLinkCard: FC<Props> = ({ link }: Props) => {
-  return (
-    <>
-      <Box sx={{ backgroundColor: link.bgColor }}>
-        <img src={link.icon} />
-      </Box>
-    </>
-  );
+  if (link.isDetails) {
+    return (
+      <>
+        <Box sx={{ backgroundColor: link.bgColor }}>
+          <Typography>{link.title}</Typography>
+          <Typography>{link.description}</Typography>
+          <Button>Подробнее</Button>
+        </Box>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Box sx={{ backgroundColor: link.bgColor }}>
+          <img src={link.icon} />
+          <Typography>{link.title}</Typography>
+        </Box>
+      </>
+    );
+  }
 };

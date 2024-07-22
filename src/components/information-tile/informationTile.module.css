@@ -47,33 +47,33 @@ button {
 }
 
 .tileTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.05em;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 30px !important;
+  letter-spacing: 0.05em !important;
 }
 
 .tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 264px;
-  height: auto;
-  margin-top: 32px;
-  padding-bottom: 43px;
-  padding-inline: 27px;
-  padding-top: 46px;
-  background-color: #3c79ff;
-  color: white;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 264px !important;
+  height: auto !important;
+  margin-top: 32px !important;
+  padding-bottom: 43px !important;
+  padding-inline: 27px !important;
+  padding-top: 46px !important;
+  background-color: #3c79ff !important;
+  color: white !important;
 }
 
 .descriptionContainer {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .tileDescription {
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.05em;
+  font-family: "Inter", sans-serif !important;
+  letter-spacing: 0.05em !important;
 }
 
 .detailsBtn {

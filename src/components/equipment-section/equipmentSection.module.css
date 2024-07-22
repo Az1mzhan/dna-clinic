@@ -47,24 +47,24 @@ button {
 }
 
 .equipmentSection {
-  width: 85.156vw;
-  margin-top: 32px;
-  margin-bottom: 325px;
+  width: 85.156vw !important;
+  margin-top: 32px !important;
+  margin-bottom: 325px !important;
 }
 
 .sectionTitle {
-  width: 28.984vw;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 0.05em;
-  line-height: 61px;
+  width: 28.984vw !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 40px !important;
+  letter-spacing: 0.05em !important;
+  line-height: 61px !important;
 }
 
 .cardsContainer {
-  display: flex;
-  gap: 2.969vw;
-  margin-top: 61px;
+  display: flex !important;
+  gap: 2.969vw !important;
+  margin-top: 61px !important;
 }
 
 /*# sourceMappingURL=equipmentSection.module.css.map */

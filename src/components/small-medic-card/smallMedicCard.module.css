@@ -143,40 +143,40 @@ button {
 }
 
 .briefSpecialtyText {
-  font-size: 12px;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.05em;
-  line-height: 15px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: "Inter", sans-serif !important;
+  letter-spacing: 0.05em !important;
+  line-height: 15px !important;
 }
 
 .firstRow {
-  gap: 1.172vw;
+  gap: 1.172vw !important;
 }
 
 .medicImage {
   width: 97px !important;
-  height: 134px;
-  background-color: rgba(234, 234, 234, 0.53);
-  border-radius: 4px;
+  height: 134px !important;
+  background-color: rgba(234, 234, 234, 0.53) !important;
+  border-radius: 4px !important;
 }
 
 .actionButtonsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 7px !important;
 }
 .actionButtonsContainer button {
   width: 275px !important;
   height: 43px !important;
 }
 .actionButtonsContainer button:first-child {
-  background-color: white;
+  background-color: white !important;
   color: #3c79ff !important;
-  border: 1px solid #3c79ff;
+  border: 1px solid #3c79ff !important;
 }
 .actionButtonsContainer button:last-child {
-  background-color: #3c79ff;
+  background-color: #3c79ff !important;
 }
 
 /*# sourceMappingURL=smallMedicCard.module.css.map */

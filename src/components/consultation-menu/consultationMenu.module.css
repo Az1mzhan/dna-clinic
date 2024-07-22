@@ -47,13 +47,13 @@ button {
 }
 
 .consultationMenu {
-  width: 100%;
-  margin-top: 23px;
+  width: 100% !important;
+  margin-top: 23px !important;
 }
 
 .buttonsContainer {
-  display: flex;
-  gap: 19px;
+  display: flex !important;
+  gap: 19px !important;
 }
 .buttonsContainer button {
   height: 38px !important;
@@ -65,13 +65,13 @@ button {
 
 .menuBtn {
   width: 164px !important;
-  background-color: white;
+  background-color: white !important;
   color: #757575 !important;
 }
 
 .selectedMenuBtn {
   width: 179px !important;
-  background-color: #3c79ff;
+  background-color: #3c79ff !important;
 }
 
 /*# sourceMappingURL=consultationMenu.module.css.map */

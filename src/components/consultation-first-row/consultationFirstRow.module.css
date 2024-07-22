@@ -47,45 +47,45 @@ button {
 }
 
 .firstRow {
-  display: flex;
-  align-items: center;
-  gap: 199px;
-  width: 100%;
-  margin-top: 53px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 199px !important;
+  width: 100% !important;
+  margin-top: 53px !important;
 }
 
 .rowTitle, .linksContainer > a {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.05em;
-  line-height: 34px;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: 0.05em !important;
+  line-height: 34px !important;
 }
 
 .rowTitle {
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: bold !important;
+  font-size: 40px !important;
 }
 
 .linksContainer {
-  display: flex;
-  gap: 39px;
-  margin-top: 13px;
+  display: flex !important;
+  gap: 39px !important;
+  margin-top: 13px !important;
 }
 .linksContainer a {
-  color: #3c79ff;
-  font-weight: 600;
-  font-size: 20px;
+  color: #3c79ff !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
 }
 
 .buttonsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
 }
 .buttonsContainer button {
   width: 211px !important;
   height: 37px !important;
   padding: 0 !important;
-  background-color: #3c79ff;
+  background-color: #3c79ff !important;
   border-radius: 5px !important;
   font-family: "Montserrat", sans-serif !important;
   font-size: 13px !important;

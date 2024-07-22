@@ -47,25 +47,25 @@ button {
 }
 
 .medicCard {
-  display: flex;
-  margin-top: 7.5vh;
-  padding: 35px;
-  background-color: white;
-  border-radius: 10px;
+  display: flex !important;
+  margin-top: 7.5vh !important;
+  padding: 35px !important;
+  background-color: white !important;
+  border-radius: 10px !important;
 }
 
 .medicAvatar {
-  width: 100px;
-  height: 170px;
-  background-color: rgba(234, 234, 234, 0.53);
-  border-radius: 4px;
-  margin-bottom: 20px;
+  width: 100px !important;
+  height: 170px !important;
+  background-color: rgba(234, 234, 234, 0.53) !important;
+  border-radius: 4px !important;
+  margin-bottom: 20px !important;
 }
 
 .medicInfoBtn {
   width: max-content !important;
   color: black !important;
-  border: 0.0625vw solid #e0e0e0;
+  border: 0.0625vw solid #e0e0e0 !important;
   border-radius: 12px !important;
 }
 
@@ -78,18 +78,18 @@ button {
 }
 
 .primaryInfo, .secondaryInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5vh !important;
 }
 
 .primaryInfo {
-  margin-left: 5vw;
+  margin-left: 5vw !important;
 }
 
 .secondaryInfo {
-  align-items: center;
-  gap: 14px;
+  align-items: center !important;
+  gap: 14px !important;
 }
 
 .listTitle {
@@ -106,22 +106,22 @@ button {
 }
 
 .occupation {
-  color: #3c79ff;
+  color: #3c79ff !important;
   font-family: "Inter", sans-serif !important;
   font-weight: bold !important;
 }
 
 .recordToDoctorButton {
-  width: max-content;
+  width: max-content !important;
   margin-top: 20px !important;
 }
 
 .actionButtons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-left: 0;
-  margin-right: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .actionBtn {
@@ -135,7 +135,7 @@ button {
 }
 
 .actionBtnIcon {
-  margin-left: 0.5vw;
+  margin-left: 0.5vw !important;
 }
 
 .actionBtnTitle {
@@ -144,10 +144,10 @@ button {
 }
 
 .actionBtnInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 1vw;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin-left: 1vw !important;
 }
 
 .actionBtnMedicName {
@@ -157,38 +157,38 @@ button {
 }
 
 .contactPhone {
-  color: #3c79ff;
+  color: #3c79ff !important;
   font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
 }
 
 @media (max-width: 900px) {
   .medicCard {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .header {
-    display: flex;
+    display: flex !important;
   }
   .headerName {
-    margin-left: 20px;
+    margin-left: 20px !important;
   }
   .primaryInfo {
-    margin-left: 0;
-    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
   }
   .medicInfoBtn {
-    margin-top: 10px;
-    margin-right: 8px;
+    margin-top: 10px !important;
+    margin-right: 8px !important;
   }
   .actionButtons {
-    margin-left: 0;
-    flex-direction: row;
-    margin-top: 20px;
+    margin-left: 0 !important;
+    flex-direction: row !important;
+    margin-top: 20px !important;
   }
 }
 @media (max-width: 500px) {
   .medicCard {
-    padding: 20px;
+    padding: 20px !important;
   }
 }
 

@@ -47,13 +47,13 @@ button {
 }
 
 .header {
-  display: flex;
-  width: 100%;
-  padding-top: 5vh;
+  display: flex !important;
+  width: 100% !important;
+  padding-top: 5vh !important;
 }
 
 .headerContent {
-  display: flex;
+  display: flex !important;
 }
 
 .drawer {
@@ -78,21 +78,21 @@ button {
 }
 
 .phoneContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: black;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  color: black !important;
 }
 
 .aroundClockLabel {
-  height: 50%;
-  color: #7A7A7A;
+  height: 50% !important;
+  color: #7A7A7A !important;
   font-family: "Inter", sans-serif !important;
   font-size: 9px !important;
   font-weight: 500 !important;
   line-height: 11px !important;
   letter-spacing: 0.05em !important;
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 
 .aroundClockPhone {
@@ -106,9 +106,9 @@ button {
 }
 
 .headerButtonsGroup {
-  margin-left: 1.092vw;
-  display: flex;
-  gap: 0.9375vw;
+  margin-left: 1.092vw !important;
+  display: flex !important;
+  gap: 0.9375vw !important;
 }
 .headerButtonsGroup button {
   font-weight: bold !important;

@@ -47,61 +47,61 @@ button {
 }
 
 .diagnosisBanner {
-  display: flex;
-  width: 87.109vw;
-  height: 346px;
-  color: white;
-  border-radius: 0.625vw;
+  display: flex !important;
+  max-width: 100% !important;
+  min-height: 346px !important;
+  color: white !important;
+  border-radius: 0.625vw !important;
 }
 
 .bannerInfo {
-  padding-left: 2.031vw;
+  padding-left: 26px !important;
+  padding-right: 61px !important;
 }
 
 .bannerImage {
-  border-radius: 0.625vw;
+  border-radius: 0.625vw !important;
 }
 
 .bannerTitle {
-  margin-top: 33.75px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  letter-spacing: 0.05em;
-  line-height: 34px;
+  margin-top: 33.75px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 28px !important;
+  letter-spacing: 0.05em !important;
+  line-height: 34px !important;
 }
 
 .titleDivider {
-  width: 5.352vw;
-  height: 3px;
-  margin-top: 18px;
-  background-color: white;
-  border-radius: 1.25vw;
+  width: 5.352vw !important;
+  height: 3px !important;
+  margin-top: 18px !important;
+  background-color: white !important;
+  border-radius: 1.25vw !important;
 }
 
 .bannerDescription {
-  width: 42.578vw;
-  margin-top: 42px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  line-height: 15px;
+  margin-top: 42px !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.05em !important;
+  line-height: 15px !important;
 }
 
 .buttonsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1.016vw;
-  row-gap: 16px;
-  width: 39.063vw;
-  margin-top: 35px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  column-gap: 1.016vw !important;
+  row-gap: 16px !important;
+  width: 39.063vw !important;
+  margin-top: 35px !important;
 }
 .buttonsContainer button {
   width: auto !important;
   height: 34px !important;
   padding: 0 !important;
-  background-color: white;
+  background-color: white !important;
 }
 
 /*# sourceMappingURL=diagnosisBannerComponent.module.css.map */

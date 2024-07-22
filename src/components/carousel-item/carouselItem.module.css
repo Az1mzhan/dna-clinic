@@ -47,14 +47,14 @@ button {
 }
 
 .slideContainer {
-  width: 99.027%;
-  min-height: 149px;
-  height: auto;
-  margin-top: 40px;
-  border-radius: 20px;
-  background-image: url("../../assets/vector_bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 99.027% !important;
+  min-height: 149px !important;
+  height: auto !important;
+  margin-top: 40px !important;
+  border-radius: 20px !important;
+  background-image: url("../../assets/vector_bg.svg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .slideTitle, .listItem {
@@ -63,28 +63,28 @@ button {
 }
 
 .slideTitle {
-  display: flex;
-  flex-direction: column;
-  margin-left: 115px;
-  padding-top: 23px;
-  font-size: 30px;
-  letter-spacing: 0.05em;
-  line-height: 37px;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-left: 115px !important;
+  padding-top: 23px !important;
+  font-size: 30px !important;
+  letter-spacing: 0.05em !important;
+  line-height: 37px !important;
 }
 
 .featureList {
-  display: flex;
-  gap: 16px;
+  display: flex !important;
+  gap: 16px !important;
 }
 .featureList li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 .featureList li p {
   font-size: 20px;
   font-weight: 600 !important;
 }
 .featureList li:last-child {
-  list-style-type: none;
+  list-style-type: none !important;
 }
 .featureList li:last-child button {
   width: 186px !important;
