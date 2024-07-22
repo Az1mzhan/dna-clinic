@@ -2,19 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fafafa;
-  font-family: "Inter", sans-serif;
-  min-height: 100vh;
-  height: auto;
-  margin: 0;
+  background-color: #fafafa !important;
+  font-family: "Inter", sans-serif !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  margin: 0 !important;
 }
 
 .app-container {
-  max-width: 1131px;
-  margin: 0 auto;
+  max-width: 1131px !important;
+  margin: 0 auto !important;
 }
 
 button {
@@ -117,29 +114,29 @@ button {
 }
 
 .infoButtonsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 11px !important;
 }
 .infoButtonsContainer button {
   width: 100px !important;
   height: 29px !important;
   padding: 0 !important;
   color: black !important;
-  border: 0.2px solid #cccccc;
+  border: 0.2px solid #cccccc !important;
   border-radius: 10px !important;
 }
 
 .briefSpecialty {
-  margin-top: 38px;
+  margin-top: 38px !important;
 }
 
 .briefSpecialtyLabel {
-  font-size: 9px;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.05em;
-  line-height: 11px;
+  font-size: 9px !important;
+  font-weight: 500 !important;
+  font-family: "Inter", sans-serif !important;
+  letter-spacing: 0.05em !important;
+  line-height: 11px !important;
 }
 
 .briefSpecialtyText {

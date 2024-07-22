@@ -1,6 +1,6 @@
 .medicsPage {
-  width: 99.735%;
-  padding-bottom: 221px;
+  width: 99.735% !important;
+  padding-bottom: 221px !important;
 }
 
 /*# sourceMappingURL=medicsPage.module.css.map */
