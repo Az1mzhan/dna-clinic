@@ -1,0 +1,42 @@
+@use "../../App" as styles
+
+.firstRow
+  display: flex
+  align-items: center
+  gap: 199px
+  width: 100%
+  margin-top: 53px
+
+.rowTitle, .linksContainer > a
+  font-family: styles.$montserrat-font
+  letter-spacing: 0.05em
+  line-height: 34px
+
+.rowTitle
+  font-weight: bold
+  font-size: 40px
+
+.linksContainer
+  display: flex
+  gap: 39px
+  margin-top: 13px
+
+  a
+    color: styles.$primary-color
+    font-weight: 600
+    font-size: 20px
+
+.buttonsContainer
+  display: flex
+  flex-direction: column
+  gap: 6px
+
+  button
+    width: 211px !important
+    height: 37px !important
+    padding: 0 !important
+    background-color: styles.$primary-color
+    border-radius: 5px !important
+    font-family: styles.$montserrat-font !important
+    font-size: 13px !important
+    line-height: 16px !important

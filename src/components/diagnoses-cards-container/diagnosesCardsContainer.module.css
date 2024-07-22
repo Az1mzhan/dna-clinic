@@ -1,6 +1,6 @@
 .cardsContainer {
   display: flex;
-  gap: 1.172vw;
+  gap: 15px;
   width: 92.031vw;
   margin-top: 44px;
 }

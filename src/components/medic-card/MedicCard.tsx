@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { Medic } from "../../types/Medic";
 import { Box, Button, Typography } from "@mui/material";
+import MediaQuery from "react-responsive";
 import bluePhone from "../../assets/phone_blue.svg";
 import file from "../../assets/file.svg";
 import styles from "./medicCard.module.css";
@@ -46,41 +47,78 @@ export const MedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
   return (
     <>
       <Box className={styles.medicCard}>
-        <Box className={styles.secondaryInfo}>
-          <Box className={styles.medicAvatar}>
-            {medic.image && (
-              <img src={medic.image} sx={{ width: "100%", height: "100%" }} />
-            )}
+        <Box className={styles.header}>
+          <Box className={styles.secondaryInfo}>
+            <Box className={styles.medicAvatar}>
+              {medic.image && (
+                <img src={medic.image} sx={{ width: "100%", height: "100%" }} />
+              )}
+            </Box>
+            <MediaQuery minWidth={900}>
+              <Button className={styles.medicInfoBtn}>
+                <Typography className={styles.medicInfoTypography}>
+                  Стаж:
+                </Typography>
+                <Typography className={styles.medicInfoTypography}>
+                  {medic.experience}
+                </Typography>
+                <Typography className={styles.medicInfoTypography}>
+                  {experienceLabel}
+                </Typography>
+              </Button>
+              <Button className={styles.medicInfoBtn}>
+                <Typography className={styles.medicInfoTypography}>
+                  Отзывы:
+                </Typography>
+                <Typography className={styles.medicInfoTypography}>
+                  {medic.reviews.length}
+                </Typography>
+              </Button>
+            </MediaQuery>
           </Box>
-          <Button className={styles.medicInfoBtn}>
-            <Typography className={styles.medicInfoTypography}>
-              Стаж:
-            </Typography>
-            <Typography className={styles.medicInfoTypography}>
-              {medic.experience}
-            </Typography>
-            <Typography className={styles.medicInfoTypography}>
-              {experienceLabel}
-            </Typography>
-          </Button>
-          <Button className={styles.medicInfoBtn}>
-            <Typography className={styles.medicInfoTypography}>
-              Отзывы:
-            </Typography>
-            <Typography className={styles.medicInfoTypography}>
-              {medic.reviews.length}
-            </Typography>
-          </Button>
+          <MediaQuery maxWidth={900}>
+            <Box className={styles.headerName}>
+              <Typography className={styles.fullName} variant="h4">
+                {medic.fullName}
+              </Typography>
+              <Typography className={styles.occupation} variant="subtitle1">
+                {medic.occupation}
+              </Typography>
+              <MediaQuery maxWidth={900}>
+                <Button className={styles.medicInfoBtn}>
+                  <Typography className={styles.medicInfoTypography}>
+                    Стаж:
+                  </Typography>
+                  <Typography className={styles.medicInfoTypography}>
+                    {medic.experience}
+                  </Typography>
+                  <Typography className={styles.medicInfoTypography}>
+                    {experienceLabel}
+                  </Typography>
+                </Button>
+                <Button className={styles.medicInfoBtn}>
+                  <Typography className={styles.medicInfoTypography}>
+                    Отзывы:
+                  </Typography>
+                  <Typography className={styles.medicInfoTypography}>
+                    {medic.reviews.length}
+                  </Typography>
+                </Button>
+              </MediaQuery>
+            </Box>
+          </MediaQuery>
         </Box>
         <Box className={styles.primaryInfo}>
-          <Box>
-            <Typography className={styles.fullName} variant="h4">
-              {medic.fullName}
-            </Typography>
-            <Typography className={styles.occupation} variant="subtitle1">
-              {medic.occupation}
-            </Typography>
-          </Box>
+          <MediaQuery minWidth={900}>
+            <Box>
+              <Typography className={styles.fullName} variant="h4">
+                {medic.fullName}
+              </Typography>
+              <Typography className={styles.occupation} variant="subtitle1">
+                {medic.occupation}
+              </Typography>
+            </Box>
+          </MediaQuery>
           <Box>
             <Box>
               <Typography className={styles.listTitle} variant="subtitle2">

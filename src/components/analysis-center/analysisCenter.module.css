@@ -78,4 +78,24 @@ button {
   margin-top: 1vh;
 }
 
+@media (max-width: 813px) {
+  .listItem {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 519px) {
+  .medicalAnalyses {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .medicalAnalyses > div, .medicalAnalyses > img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .analysesTitle {
+    color: #3c79ff;
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=analysisCenter.module.css.map */

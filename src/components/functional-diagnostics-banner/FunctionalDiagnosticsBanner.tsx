@@ -3,7 +3,7 @@ import { DiagnosisBannerComponent } from "../diagnosis-banner-component/Diagnosi
 import { defaultDiagnosesBanners } from "../../types/DiagnosisBanner";
 import { Box } from "@mui/material";
 
-export const FunctionalDiagnosisBanner: FC = () => {
+export const FunctionalDiagnosticsBanner: FC = () => {
   const banner = defaultDiagnosesBanners[1];
 
   return (

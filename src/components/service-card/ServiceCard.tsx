@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { ServiceObject } from "../../types/ServiceObject";
+import { ServiceCard } from "../../types/ServiceCard";
 import { Box, Typography } from "@mui/material";
 import styles from "./serviceCard.module.css";
 
 interface Props {
-  service: ServiceObject;
+  service: ServiceCard;
 }
 
 export const ServiceCard: FC<Props> = ({ service }: Props) => {

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 3.255vw !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.pricePosition {
+  display: flex;
+  justify-content: space-between;
+}
+.pricePosition p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 61px;
+}
+.pricePosition p:first-child {
+  font-weight: 500;
+}
+.pricePosition p:last-child {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=pricePosition.module.css.map */

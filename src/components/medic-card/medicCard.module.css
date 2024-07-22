@@ -44,21 +44,24 @@ button {
 .medicCard {
   display: flex;
   margin-top: 7.5vh;
-  padding: 10vh 3.75vw;
+  padding: 35px;
   background-color: white;
+  border-radius: 10px;
 }
 
 .medicAvatar {
-  width: 10vw;
-  height: 27.5vh;
+  width: 100px;
+  height: 170px;
   background-color: rgba(234, 234, 234, 0.53);
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .medicInfoBtn {
-  width: 10vw !important;
+  width: max-content !important;
   color: black !important;
   border: 0.0625vw solid #e0e0e0;
-  border-radius: 1vw !important;
+  border-radius: 12px !important;
 }
 
 .medicInfoTypography {
@@ -81,6 +84,7 @@ button {
 
 .secondaryInfo {
   align-items: center;
+  gap: 14px;
 }
 
 .listTitle {
@@ -103,25 +107,26 @@ button {
 }
 
 .recordToDoctorButton {
-  width: 17.5vw !important;
-  margin-top: 2vh !important;
+  width: max-content;
+  margin-top: 20px !important;
 }
 
 .actionButtons {
   display: flex;
   flex-direction: column;
-  gap: 3.75vh;
-  margin-left: 7.5vw;
-  margin-right: 2.5vw;
+  gap: 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .actionBtn {
-  width: 20vw !important;
-  height: 8.75vh !important;
+  width: 200px !important;
+  height: 53px !important;
   color: black !important;
-  border: 0.125vw solid #e0e0e0 !important;
-  border-radius: 0.75vw !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 6px !important;
   justify-content: flex-start !important;
+  padding: 4px 9px !important;
 }
 
 .actionBtnIcon {
@@ -150,6 +155,36 @@ button {
   color: #3c79ff;
   font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
+}
+
+@media (max-width: 900px) {
+  .medicCard {
+    flex-direction: column;
+  }
+  .header {
+    display: flex;
+  }
+  .headerName {
+    margin-left: 20px;
+  }
+  .primaryInfo {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .medicInfoBtn {
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  .actionButtons {
+    margin-left: 0;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .medicCard {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=medicCard.module.css.map */

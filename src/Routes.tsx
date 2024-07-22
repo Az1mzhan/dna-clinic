@@ -20,8 +20,15 @@ const MedicsPage = lazy(() =>
   })
 );
 
-const DiagnosisPage = lazy(() =>
-  import("./pages/diagnosis-page/DiagnosisPage").catch((err) => {
+const DiagnosticsPage = lazy(() =>
+  import("./pages/diagnostics-page/DiagnosticsPage").catch((err) => {
+    console.error(err);
+    return { default: CircularProgress };
+  })
+);
+
+const ConsultationPage = lazy(() =>
+  import("./pages/consultation-page/ConsultationPage").catch((err) => {
     console.error(err);
     return { default: CircularProgress };
   })
@@ -50,7 +57,15 @@ export const router = createBrowserRouter(
         path="diagnostics"
         element={
           <Suspense fallback={<CircularProgress />}>
-            <DiagnosisPage />
+            <DiagnosticsPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path="consultation"
+        element={
+          <Suspense fallback={<CircularProgress />}>
+            <ConsultationPage />
           </Suspense>
         }
       />

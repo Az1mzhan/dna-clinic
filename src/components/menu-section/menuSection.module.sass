@@ -1,0 +1,45 @@
+@use "../../App" as styles
+
+.menuSection
+  display: flex
+  flex-flow: column wrap
+  width: calc(100% - 64px)
+  height: 712px
+  margin-top: 21px
+  padding-left: 64px
+  padding-top: 68px
+  padding-bottom: 69px
+  border-radius: 30px
+  background-color: white
+
+.letterSection
+  display: flex
+  margin-top: 27px
+
+.letterTitle
+  color: styles.$primary-color
+  font-family: styles.$montserrat-font
+  font-weight: bold
+  font-size: 20px
+  letter-spacing: 0.05em
+  line-height: 24px
+
+.letterList
+  display: flex
+  flex-direction: column
+  margin-left: 11px
+  margin-top: 3px
+
+.link
+  color: black
+  font-family: styles.$montserrat-font
+  font-weight: 500
+  font-size: 15px
+  letter-spacing: 0.05em
+  line-height: 18px
+  text-decoration: none
+  transition: all .1s ease-out
+
+  &:hover
+    color: styles.$primary-color
+    text-decoration: underline

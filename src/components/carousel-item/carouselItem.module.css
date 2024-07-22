@@ -42,8 +42,10 @@ button {
 }
 
 .slideContainer {
-  width: 87.5vw;
+  width: 99.027%;
+  min-height: 149px;
   height: auto;
+  margin-top: 40px;
   background-image: url("../../assets/vector_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;

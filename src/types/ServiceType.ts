@@ -1,4 +1,4 @@
-export enum Service {
+export enum ServiceType {
   DIAGNOSIS = "Диагностика",
   CONSULTING = "Консультации специалистов",
   SURGERY = "Хирургическое лечение",

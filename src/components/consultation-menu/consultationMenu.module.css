@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 3.255vw !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.consultationMenu {
+  width: 100%;
+  margin-top: 23px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 19px;
+}
+.buttonsContainer button {
+  height: 38px !important;
+  padding: 0 !important;
+  border-radius: 0.5vw !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.menuBtn {
+  width: 164px !important;
+  background-color: white;
+  color: #757575 !important;
+}
+
+.selectedMenuBtn {
+  width: 179px !important;
+  background-color: #3c79ff;
+}
+
+/*# sourceMappingURL=consultationMenu.module.css.map */
