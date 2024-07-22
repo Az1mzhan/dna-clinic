@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 3.255vw !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.tileTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 264px;
+  height: auto;
+  margin-top: 32px;
+  padding-bottom: 43px;
+  padding-inline: 27px;
+  padding-top: 46px;
+  background-color: #3c79ff;
+  color: white;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tileDescription {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.detailsBtn {
+  width: 191px !important;
+  height: 43px !important;
+  border-radius: 10px !important;
+}
+
+/*# sourceMappingURL=informationTile.module.css.map */
