@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+.app-container {
+  max-width: 1131px;
+  margin: 0 auto;
+}
+
 button {
   width: 12vw !important;
   height: 6.25vh !important;
@@ -44,31 +49,34 @@ button {
 .card {
   display: flex;
   flex-direction: column;
-  min-width: 346px !important;
+  gap: 41px;
+  min-width: 283px;
+  min-height: 448px;
+  padding: 28px 35px 0;
   border: 1px solid #cccccc;
   border-radius: 10px;
 }
 .card > div {
   display: flex;
 }
-.card > div:nth-child(2) button {
-  width: 100% !important;
-  padding: 8px 11% !important;
-  color: black !important;
-  border: 0.2px solid #cccccc;
-  border-radius: 0.781vw !important;
+
+.cardInfo {
+  gap: 15px;
 }
-.card > div:nth-child(3) {
+
+.firstRow {
+  display: flex;
   flex-direction: column;
+  gap: 38px;
 }
 
 .buttonText {
   text-align: center;
-  font-size: 10pt;
+  font-size: 10px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.05em;
-  line-height: 10px;
+  line-height: 12px;
 }
 
 .buttonQuantity {
@@ -85,7 +93,7 @@ button {
 }
 
 .initialInfoContainer {
-  margin-top: 35px;
+  margin-top: 7px;
 }
 
 .fullName, .occupation {
@@ -95,7 +103,7 @@ button {
 
 .fullName {
   width: 32.659%;
-  font-size: 12pt;
+  font-size: 12px;
   line-height: 15px;
   font-family: "Montserrat", sans-serif;
 }
@@ -103,7 +111,7 @@ button {
 .occupation {
   margin-top: 15px;
   color: #3c79ff;
-  font-size: 10pt;
+  font-size: 10px;
   line-height: 12px;
   font-family: "Inter", sans-serif;
 }
@@ -111,19 +119,23 @@ button {
 .infoButtonsContainer {
   display: flex;
   flex-direction: column;
-  gap: 11px !important;
-  width: 28.902% !important;
-  margin-left: 10.116%;
-  margin-top: 38px;
+  gap: 11px;
+}
+.infoButtonsContainer button {
+  width: 100px !important;
+  height: 29px !important;
+  padding: 0 !important;
+  color: black !important;
+  border: 0.2px solid #cccccc;
+  border-radius: 10px !important;
 }
 
 .briefSpecialty {
-  margin-left: 0.938vw;
   margin-top: 38px;
 }
 
 .briefSpecialtyLabel {
-  font-size: 9pt;
+  font-size: 9px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.05em;
@@ -131,7 +143,7 @@ button {
 }
 
 .briefSpecialtyText {
-  font-size: 12pt;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.05em;
@@ -140,6 +152,31 @@ button {
 
 .firstRow {
   gap: 1.172vw;
+}
+
+.medicImage {
+  width: 97px !important;
+  height: 134px;
+  background-color: rgba(234, 234, 234, 0.53);
+  border-radius: 4px;
+}
+
+.actionButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.actionButtonsContainer button {
+  width: 275px !important;
+  height: 43px !important;
+}
+.actionButtonsContainer button:first-child {
+  background-color: white;
+  color: #3c79ff !important;
+  border: 1px solid #3c79ff;
+}
+.actionButtonsContainer button:last-child {
+  background-color: #3c79ff;
 }
 
 /*# sourceMappingURL=smallMedicCard.module.css.map */

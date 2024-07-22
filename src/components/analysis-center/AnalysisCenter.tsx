@@ -13,19 +13,19 @@ export const AnalysisCenter: FC = () => {
   return (
     <>
       <Box className={styles.container}>
-        <Typography className={styles.containerTitle} variant="h3">
+        <Typography className={styles.containerTitle}>
           Центр анализов
         </Typography>
         <Box className={styles.medicalAnalyses}>
           <Box>
-            <Typography className={styles.analysesTitle} variant="h3">
+            <Typography className={styles.analysesTitle}>
               Медицинские анализы
             </Typography>
             <ul>
               {listItems.map((item, id) => (
                 <li key={id} className={styles.listItem}>
                   <Typography className={styles.listItem} variant="h5">
-                    `{item}
+                    {item}
                   </Typography>
                 </li>
               ))}
@@ -34,7 +34,7 @@ export const AnalysisCenter: FC = () => {
               Перейти
             </Button>
           </Box>
-          <img src={analysis} />
+          <img className={styles.analysisPoster} src={analysis} />
         </Box>
       </Box>
     </>

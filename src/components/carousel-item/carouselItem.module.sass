@@ -5,6 +5,7 @@
   min-height: 149px
   height: auto
   margin-top: 40px
+  border-radius: 20px
   background-image: url("../../assets/vector_bg.svg")
   background-size: cover
   background-repeat: no-repeat
@@ -14,14 +15,17 @@
   font-weight: bold !important
 
 .slideTitle
-  margin-left: 10.268%
-  margin-top: 23px
+  display: flex
+  flex-direction: column
+  margin-left: 115px
+  padding-top: 23px
   font-size: 30px
+  letter-spacing: 0.05em
+  line-height: 37px
 
 .featureList
   display: flex
-  margin-top: 21px
-  margin-bottom: 44px
+  gap: 16px
 
   li
     font-family: styles.$montserrat-font
@@ -34,6 +38,9 @@
       list-style-type: none
 
       button
+        width: 186px !important
+        height: 37px !important
+        border-radius: 13px !important
         font-size: 13px !important
         font-family: styles.$montserrat-font !important
         font-weight: bold !important

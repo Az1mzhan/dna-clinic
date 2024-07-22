@@ -5,6 +5,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.app-container {
+  max-width: 1131px;
+  margin: 0 auto;
+}
+
 button {
   padding: 2.326% 4.762% !important;
   color: white !important;

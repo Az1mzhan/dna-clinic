@@ -16,91 +16,89 @@ export const CarouselItem: FC<Props> = ({
 
   if (isDefaultTemplate)
     return (
-      <Box className={styles.slideContainer} sx={{ borderRadius: 10 }}>
-        <Box>
-          <Typography className={styles.slideTitle}>
-            Центр диагностики и лечения
-          </Typography>
-          <Box
-            className={styles.featureList}
-            component="ul"
-            sx={{
-              flexDirection: {
-                xs: "column",
-                sm: "row",
-              },
-              alignItems: {
-                xs: "flex-start",
-                sm: "center",
-              },
-              rowGap: {
-                xs: "1vh",
-                sm: "normal",
-              },
-              marginLeft: {
-                sm: "0.607%",
-                md: "15.607%",
-                lg: "21.607%",
-              },
-            }}
-          >
-            {listItems.map((item, id) => (
-              <ListItem
-                key={id}
-                sx={{
-                  width: {
-                    sm: "fit-content",
-                    md: "auto",
-                  },
-                  textAlign: {
-                    xs: "right",
-                    sm: "left",
-                  },
-                  "&:nth-child(2)": {
-                    marginLeft: {
-                      sm: "2.5vw",
-                      md: "7.5vw",
-                    },
-                  },
-                }}
-              >
-                <Typography className={styles.listItem}>{item}</Typography>
-              </ListItem>
-            ))}
+      <Box className={styles.slideContainer}>
+        <Typography className={styles.slideTitle}>
+          Центр диагностики и лечения
+        </Typography>
+        <Box
+          className={styles.featureList}
+          component="ul"
+          sx={{
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+            },
+            alignItems: {
+              xs: "flex-start",
+              sm: "center",
+            },
+            rowGap: {
+              xs: "1vh",
+              sm: "normal",
+            },
+            marginLeft: {
+              sm: "0.607%",
+              md: "15.607%",
+              lg: "21.607%",
+            },
+          }}
+        >
+          {listItems.map((item, id) => (
             <ListItem
+              key={id}
               sx={{
-                flexBasis: {
-                  xs: "100%",
-                  sm: "auto",
-                },
-                marginRight: {
-                  sm: "2.5vw !important",
-                  md: "0 !important",
+                width: {
+                  sm: "fit-content",
+                  md: "auto",
                 },
                 textAlign: {
                   xs: "right",
                   sm: "left",
                 },
+                "&:nth-child(2)": {
+                  marginLeft: {
+                    sm: "2.5vw",
+                    md: "7.5vw",
+                  },
+                },
               }}
             >
-              <Button
-                className="secondaryBtn"
-                sx={{
-                  width: "fit-content !important",
-                  marginLeft: {
-                    xs: "0",
-                    sm: "2.5vw",
-                  },
-                  paddingInline: {
-                    xs: "8.75vw !important",
-                    md: "0 !important",
-                  },
-                }}
-              >
-                Подробнее
-              </Button>
+              <Typography className={styles.listItem}>{item}</Typography>
             </ListItem>
-          </Box>
+          ))}
+          <ListItem
+            sx={{
+              flexBasis: {
+                xs: "100%",
+                sm: "auto",
+              },
+              marginRight: {
+                sm: "2.5vw !important",
+                md: "0 !important",
+              },
+              textAlign: {
+                xs: "right",
+                sm: "left",
+              },
+            }}
+          >
+            <Button
+              className="secondaryBtn"
+              sx={{
+                width: "fit-content !important",
+                marginLeft: {
+                  xs: "0",
+                  sm: "2.5vw",
+                },
+                paddingInline: {
+                  xs: "8.75vw !important",
+                  md: "0 !important",
+                },
+              }}
+            >
+              Подробнее
+            </Button>
+          </ListItem>
         </Box>
       </Box>
     );

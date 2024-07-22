@@ -44,55 +44,55 @@ export const SmallMedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
   return (
     <>
       <Box className={styles.card}>
-        <Box className={styles.firstRow}>
-          <Box className={styles.avatarContainer}>
-            {medic.image && (
-              <img src={medic.image} sx={{ width: "100%", height: "100%" }} />
-            )}
+        <Box className={styles.cardInfo}>
+          <Box className={styles.firstRow}>
+            <img className={styles.medicImage} src={medic.image} />
+            <Box className={styles.infoButtonsContainer}>
+              <Button>
+                <Typography className={styles.buttonText}>
+                  Стаж:&nbsp;
+                </Typography>
+                <Typography
+                  className={styles.buttonText + " " + styles.buttonQuantity}
+                >
+                  {medic.experience}&nbsp;
+                </Typography>
+                <Typography className={styles.buttonText}>
+                  {experienceLabel}
+                </Typography>
+              </Button>
+              <Button>
+                <Typography className={styles.buttonText}>
+                  Отзывы:&nbsp;
+                </Typography>
+                <Typography
+                  className={styles.buttonText + " " + styles.buttonQuantity}
+                >
+                  {medic.reviews.length}
+                </Typography>
+              </Button>
+            </Box>
           </Box>
-          <Box className={styles.initialInfoContainer}>
-            <Typography className={styles.fullName}>
-              {medic.fullName}
-            </Typography>
-            <Typography className={styles.occupation}>
-              {medic.occupation}
-            </Typography>
+          <Box>
+            <Box className={styles.initialInfoContainer}>
+              <Typography className={styles.fullName}>
+                {medic.fullName}
+              </Typography>
+              <Typography className={styles.occupation}>
+                {medic.occupation}
+              </Typography>
+            </Box>
+            <Box className={styles.briefSpecialty}>
+              <Typography className={styles.briefSpecialtyLabel}>
+                Специализация:
+              </Typography>
+              <Typography className={styles.briefSpecialtyText}>
+                {medic.briefSpecialty}
+              </Typography>
+            </Box>
           </Box>
         </Box>
-        <Box>
-          <Box className={styles.infoButtonsContainer}>
-            <Button>
-              <Typography className={styles.buttonText}>Стаж:&nbsp;</Typography>
-              <Typography
-                className={styles.buttonText + " " + styles.buttonQuantity}
-              >
-                {medic.experience}&nbsp;
-              </Typography>
-              <Typography className={styles.buttonText}>
-                {experienceLabel}
-              </Typography>
-            </Button>
-            <Button>
-              <Typography className={styles.buttonText}>
-                Отзывы:&nbsp;
-              </Typography>
-              <Typography
-                className={styles.buttonText + " " + styles.buttonQuantity}
-              >
-                {medic.reviews.length}
-              </Typography>
-            </Button>
-          </Box>
-          <Box className={styles.briefSpecialty}>
-            <Typography className={styles.briefSpecialtyLabel}>
-              Специализация:
-            </Typography>
-            <Typography className={styles.briefSpecialtyText}>
-              {medic.briefSpecialty}
-            </Typography>
-          </Box>
-        </Box>
-        <Box>
+        <Box className={styles.actionButtonsContainer}>
           <Button>Записаться по телефону</Button>
           <Button>Записаться онлайн</Button>
         </Box>

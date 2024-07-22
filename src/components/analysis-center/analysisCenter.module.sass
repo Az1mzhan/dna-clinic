@@ -1,34 +1,48 @@
 @use "../../App" as styles
 
 .container
-  width: 90vw
-  padding-bottom: 60vh
+  width: 100%
+  margin: 91px 0 221px
 
 .containerTitle
-  font-family: styles.$montserrat-font !important
-  font-weight: bold !important
-  margin: 15vh 0 10vh !important
+  font-family: styles.$montserrat-font
+  font-weight: bold
+  font-size: 40px
+  letter-spacing: 0.05em
+  line-height: 61px
 
 .medicalAnalyses
+  margin-top: 39.06px
   display: flex
-  align-items: center
 
   > div, > img
     width: 50%
 
 .analysesTitle, .listItem
-  font-family: styles.$inter-font !important
-  font-weight: 600 !important
+  font-family: styles.$inter-font
+  letter-spacing: 0.05em
 
 .analysesTitle
+  margin-top: 70.94px
   color: styles.$primary-color
+  font-weight: bold
+  font-size: 40px
+  line-height: 48px
 
 .redirectBtn
-  width: 45% !important
-  margin-top: 2vh
+  width: 275px !important
+  height: 43px !important
+  margin-top: 41px
 
 .listItem
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
   margin-top: 1vh
+
+.analysisPoster
+  width: 430px
+  height: 381.08px
 
 @media (max-width: 813px)
   .listItem

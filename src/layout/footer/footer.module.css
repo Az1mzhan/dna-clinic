@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+.app-container {
+  max-width: 1131px;
+  margin: 0 auto;
+}
+
 button {
   width: 12vw !important;
   height: 6.25vh !important;
@@ -42,9 +47,6 @@ button {
 }
 
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   row-gap: 5vh;
   align-items: center;

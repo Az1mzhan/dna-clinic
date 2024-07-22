@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+.app-container {
+  max-width: 1131px;
+  margin: 0 auto;
+}
+
 button {
   width: 12vw !important;
   height: 6.25vh !important;
@@ -45,13 +50,9 @@ button {
   align-self: flex-start;
 }
 
-.containerTitle, .cardsContainer {
-  margin-left: 95px;
-}
-
 .containerTitle {
   margin-top: 38px;
-  font-size: 40pt;
+  font-size: 40px;
   letter-spacing: 0.05em;
   line-height: 61px;
   font-weight: bold;
@@ -60,7 +61,7 @@ button {
 
 .cardsContainer {
   display: flex;
-  gap: 3.047vw;
+  gap: 39px;
   margin-top: 54px;
 }
 
