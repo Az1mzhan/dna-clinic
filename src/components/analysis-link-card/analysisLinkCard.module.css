@@ -88,7 +88,7 @@ button {
 .detailsBtn {
   width: 191px !important;
   height: 43px !important;
-  margin-top: 55px;
+  margin-top: 55px !important;
   background-color: white !important;
   color: black !important;
   border-radius: 10px !important;
