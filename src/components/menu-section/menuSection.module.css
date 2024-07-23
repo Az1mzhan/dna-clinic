@@ -47,7 +47,7 @@ button {
   display: flex !important;
   flex-flow: column wrap !important;
   width: calc(100% - 64px) !important;
-  min-height: 712px !important;
+  height: 712px !important;
   margin-top: 21px !important;
   padding-left: 64px !important;
   padding-top: 68px !important;
@@ -95,6 +95,8 @@ button {
 @media screen and (max-width: 600px) {
   .menuSection {
     flex-flow: column nowrap !important;
+    min-height: 712px !important;
+    height: auto !important;
   }
 }
 
