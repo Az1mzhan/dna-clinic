@@ -13,7 +13,7 @@ export const AnalysisLinkCard: FC<Props> = ({ link }: Props) => {
       <>
         <Box
           className={styles.majorLinkCard}
-          sx={{ backgroundColor: link.bgColor }}
+          sx={{ backgroundColor: `${link.bgColor} !important` }}
         >
           <Typography className={styles.majorCardTitle}>
             {link.title}
@@ -28,7 +28,10 @@ export const AnalysisLinkCard: FC<Props> = ({ link }: Props) => {
   } else {
     return (
       <>
-        <Box className={styles.linkCard} sx={{ backgroundColor: link.bgColor }}>
+        <Box
+          className={styles.linkCard}
+          sx={{ backgroundColor: `${link.bgColor} !important` }}
+        >
           <img src={link.icon} />
           <Typography className={styles.cardTitle}>{link.title}</Typography>
         </Box>
