@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -44,14 +44,20 @@ button {
 }
 
 .footer {
-  display: flex !important;
-  row-gap: 5vh !important;
-  align-items: center !important;
-  width: 100vw !important;
+  max-width: 100vw !important;
   min-height: 221px !important;
   height: auto !important;
   background-color: #3c79ff !important;
   color: white !important;
+}
+
+.footerContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  max-width: 1131px !important;
+  margin: 0 auto !important;
+  padding-top: 58.06px !important;
 }
 
 .footerColumn {
@@ -60,18 +66,15 @@ button {
 }
 
 .flagmanColumn {
-  align-items: center !important;
-  margin-left: 15.703vw !important;
+  gap: 5.63px !important;
 }
 
 .sectionsColumn {
   gap: 26.22px !important;
-  margin-left: 15.469vw !important;
 }
 
 .contactsColumn {
-  gap: 24.07px !important;
-  margin-left: 18.281vw !important;
+  gap: 22px !important;
 }
 
 .companyName {
@@ -85,10 +88,7 @@ button {
 
 .contactUsBtn {
   width: 221px !important;
-  padding: 11.7px 0 !important;
-}
-
-.contactUsTypography {
+  height: 38.39px !important;
   font-size: 12px !important;
   font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
@@ -100,16 +100,31 @@ button {
   font-size: 16px !important;
   font-family: "Montserrat", sans-serif !important;
   font-weight: bold !important;
+  letter-spacing: 0 !important;
+  line-height: 20px !important;
 }
 
 .contactRow {
   display: flex;
-  gap: 0.5vw;
+  gap: 5.63px;
 }
 
 .contactInfo {
   font-family: "Noto Sans", sans-serif !important;
   font-weight: bold !important;
+}
+
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    gap: 50px !important;
+    padding-bottom: 25px !important;
+  }
+  .flagmanColumn {
+    align-items: center !important;
+    flex-basis: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=footer.module.css.map */

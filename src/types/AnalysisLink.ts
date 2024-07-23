@@ -38,6 +38,21 @@ export const defaultAnalysesLinks: AnalysisLink[] = [
   },
 ];
 
+// export const defaultAnalysesLinks2: AnalysisLink[] = [
+//   {
+//     title: "Калькулятор анализов",
+//     description: "Быстрый поиск анализов и цен",
+//     bgColor: "#ea9023",
+//     isDetails: true,
+//   },
+//   {
+//     title: "Комплексные анализы",
+//     description: "Комплексная лабораторная диагностика",
+//     bgColor: "#00a355",
+//     isDetails: true,
+//   },
+// ];
+
 export interface AnalysisLink {
   title: string;
   description?: string;

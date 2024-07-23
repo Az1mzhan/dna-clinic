@@ -32,15 +32,6 @@ export const CarouselItem: FC<Props> = ({
               xs: "flex-start",
               sm: "center",
             },
-            rowGap: {
-              xs: "1vh",
-              sm: "normal",
-            },
-            marginLeft: {
-              sm: "0.607%",
-              md: "15.607%",
-              lg: "21.607%",
-            },
           }}
         >
           {listItems.map((item, id) => (
@@ -55,12 +46,6 @@ export const CarouselItem: FC<Props> = ({
                   xs: "right",
                   sm: "left",
                 },
-                "&:nth-child(2)": {
-                  marginLeft: {
-                    sm: "2.5vw",
-                    md: "7.5vw",
-                  },
-                },
               }}
             >
               <Typography className={styles.listItem}>{item}</Typography>
@@ -72,32 +57,13 @@ export const CarouselItem: FC<Props> = ({
                 xs: "100%",
                 sm: "auto",
               },
-              marginRight: {
-                sm: "2.5vw !important",
-                md: "0 !important",
-              },
               textAlign: {
                 xs: "right",
                 sm: "left",
               },
             }}
           >
-            <Button
-              className="secondaryBtn"
-              sx={{
-                width: "fit-content !important",
-                marginLeft: {
-                  xs: "0",
-                  sm: "2.5vw",
-                },
-                paddingInline: {
-                  xs: "8.75vw !important",
-                  md: "0 !important",
-                },
-              }}
-            >
-              Подробнее
-            </Button>
+            <Button className="secondaryBtn">Подробнее</Button>
           </ListItem>
         </Box>
       </Box>

@@ -1,0 +1,31 @@
+@use "../../App" as styles
+
+.container
+  display: flex !important
+  flex-direction: column !important
+  gap: 21px !important
+  width: 100% !important
+  margin-top: 53px !important
+
+.containerTitle
+  font-family: styles.$montserrat-font !important
+  font-weight: bold !important
+  font-size: 40px !important
+  letter-spacing: 0.05em !important
+  line-height: 34px !important
+
+.linkCardsContainer
+  display: flex !important
+  flex-wrap: wrap !important
+  column-gap: 34px !important
+  row-gap: 53px !important
+  width: 100% !important
+
+@media screen and (max-width: 600px)
+  .container
+    width: 95% !important
+    margin-inline: auto !important
+    text-align: center !important
+
+  .linkCardsContainer
+    justify-content: center !important

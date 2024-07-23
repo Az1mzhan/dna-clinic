@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -47,7 +47,7 @@ button {
   display: flex !important;
   flex-flow: column wrap !important;
   width: calc(100% - 64px) !important;
-  height: 712px !important;
+  min-height: 712px !important;
   margin-top: 21px !important;
   padding-left: 64px !important;
   padding-top: 68px !important;
@@ -90,6 +90,12 @@ button {
 .link:hover {
   color: #3c79ff !important;
   text-decoration: underline !important;
+}
+
+@media screen and (max-width: 600px) {
+  .menuSection {
+    flex-flow: column nowrap !important;
+  }
 }
 
 /*# sourceMappingURL=menuSection.module.css.map */

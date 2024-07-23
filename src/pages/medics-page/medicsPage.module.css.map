@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["medicsPage.module.sass"],"names":[],"mappings":"AAAA;EACE;EACA","file":"medicsPage.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../App.sass","medicsPage.module.sass"],"names":[],"mappings":"AAAQ;AACA;AACA;AAWR;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AC9CF;EACE;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;;;AAEF;EACE;IACE;IACA;IACA;;EAEF;IACE","file":"medicsPage.module.css"}

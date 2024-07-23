@@ -17,7 +17,7 @@ interface Props {
 export const CheckUpCard: FC<Props> = ({ checkUp }: Props) => {
   return (
     <>
-      <Card sx={{ borderRadius: 4 }}>
+      <Card className={styles.card}>
         <CardMedia
           className={styles.cardImage}
           component="img"

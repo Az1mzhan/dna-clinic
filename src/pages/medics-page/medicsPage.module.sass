@@ -1,3 +1,28 @@
+@use "../../App" as styles
+
 .medicsPage
   width: 99.735% !important
-  padding-bottom: 221px !important
+  margin-bottom: 540px !important
+
+.pageTitle
+  margin-top: 68px !important
+  font-family: styles.$montserrat-font !important
+  font-weight: bold !important
+  font-size: 40px !important
+  letter-spacing: 0.05em !important
+  line-height: 61px !important
+
+.cardsContainer
+  display: flex !important
+  flex-direction: column !important
+  gap: 45px !important
+  margin-top: 24px !important
+
+@media screen and (max-width: 600px)
+  .medicsPage
+    width: 95% !important
+    margin-inline: auto !important
+    text-align: center !important
+
+  .cardsContainer
+    text-align: left !important

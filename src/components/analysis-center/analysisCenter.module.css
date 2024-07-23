@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -112,6 +112,19 @@ button {
   .analysesTitle {
     color: #3c79ff !important;
     font-size: 2rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95% !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+  .medicalAnalyses {
+    text-align: center !important;
+  }
+  .listItem {
+    text-align: left !important;
   }
 }
 

@@ -78,10 +78,10 @@ export const MedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
           </Box>
           <MediaQuery maxWidth={900}>
             <Box className={styles.headerName}>
-              <Typography className={styles.fullName} variant="h4">
+              <Typography className={styles.fullName}>
                 {medic.fullName}
               </Typography>
-              <Typography className={styles.occupation} variant="subtitle1">
+              <Typography className={styles.occupation}>
                 {medic.occupation}
               </Typography>
               <MediaQuery maxWidth={900}>
@@ -111,35 +111,35 @@ export const MedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
         <Box className={styles.primaryInfo}>
           <MediaQuery minWidth={900}>
             <Box>
-              <Typography className={styles.fullName} variant="h4">
+              <Typography className={styles.fullName}>
                 {medic.fullName}
               </Typography>
-              <Typography className={styles.occupation} variant="subtitle1">
+              <Typography className={styles.occupation}>
                 {medic.occupation}
               </Typography>
             </Box>
           </MediaQuery>
           <Box>
             <Box>
-              <Typography className={styles.listTitle} variant="subtitle2">
+              <Typography className={styles.listTitle}>
                 Специализация:
               </Typography>
               <ul>
                 {medic.specialties.map((specialty, id) => (
-                  <li key={id}>
-                    <Typography variant="subtitle1">{specialty}</Typography>
+                  <li className={styles.listItem} key={id}>
+                    {specialty}
                   </li>
                 ))}
               </ul>
             </Box>
             <Box>
-              <Typography className={styles.listTitle} variant="subtitle2">
+              <Typography className={styles.listTitle}>
                 Профессиональное развитие и достижения:
               </Typography>
               <ul>
                 {medic.achievements.map((achievement, id) => (
-                  <li key={id}>
-                    <Typography variant="subtitle1">{achievement}</Typography>
+                  <li className={styles.listItem} key={id}>
+                    {achievement}
                   </li>
                 ))}
               </ul>
@@ -153,10 +153,10 @@ export const MedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
           <Button className={styles.actionBtn}>
             <img className={styles.actionBtnIcon} src={bluePhone} />
             <Box className={styles.actionBtnInfo}>
-              <Typography className={styles.actionBtnTitle} variant="subtitle2">
+              <Typography className={styles.actionBtnTitle}>
                 Запись по телефону:
               </Typography>
-              <Typography className={styles.contactPhone} variant="subtitle1">
+              <Typography className={styles.contactPhone}>
                 +7 702 301 2796
               </Typography>
             </Box>
@@ -164,10 +164,10 @@ export const MedicCard: FC<Props> = ({ medic = defaultMedic }: Props) => {
           <Button className={styles.actionBtn}>
             <img className={styles.actionBtnIcon} src={file} />
             <Box className={styles.actionBtnInfo}>
-              <Typography className={styles.actionBtnTitle} variant="subtitle2">
+              <Typography className={styles.actionBtnTitle}>
                 Резюме врача
               </Typography>
-              <Typography className={styles.actionBtnMedicName} variant="body2">
+              <Typography className={styles.actionBtnMedicName}>
                 {medic.fullName}
               </Typography>
             </Box>

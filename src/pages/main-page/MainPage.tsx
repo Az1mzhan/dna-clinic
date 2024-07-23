@@ -3,6 +3,7 @@ import { ClinicDescription } from "../../components/clinic-description/ClinicDes
 import { AnalysisCenter } from "../../components/analysis-center/AnalysisCenter";
 import { OurMedics } from "../../components/our-medics/OurMedics";
 import { CarouselItem } from "../../components/carousel-item/CarouselItem";
+import { EquipmentSection } from "../../components/equipment-section/EquipmentSection";
 
 const MainPage: FC = () => {
   return (
@@ -11,6 +12,7 @@ const MainPage: FC = () => {
       <ClinicDescription />
       <OurMedics />
       <AnalysisCenter />
+      <EquipmentSection />
     </>
   );
 };

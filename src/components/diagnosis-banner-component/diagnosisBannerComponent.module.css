@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -48,7 +48,7 @@ button {
   max-width: 100% !important;
   min-height: 346px !important;
   color: white !important;
-  border-radius: 0.625vw !important;
+  border-radius: 10px !important;
 }
 
 .bannerInfo {
@@ -57,7 +57,7 @@ button {
 }
 
 .bannerImage {
-  border-radius: 0.625vw !important;
+  border-radius: 10px !important;
 }
 
 .bannerTitle {
@@ -70,11 +70,10 @@ button {
 }
 
 .titleDivider {
-  width: 5.352vw !important;
+  width: 68.51px !important;
   height: 3px !important;
   margin-top: 18px !important;
   background-color: white !important;
-  border-radius: 1.25vw !important;
 }
 
 .bannerDescription {
@@ -89,16 +88,29 @@ button {
 .buttonsContainer {
   display: flex !important;
   flex-wrap: wrap !important;
-  column-gap: 1.016vw !important;
+  column-gap: 13px !important;
   row-gap: 16px !important;
-  width: 39.063vw !important;
+  width: 504px !important;
   margin-top: 35px !important;
 }
 .buttonsContainer button {
-  width: auto !important;
   height: 34px !important;
   padding: 0 !important;
   background-color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+  .diagnosisBanner {
+    flex-direction: column !important;
+    width: 95% !important;
+    margin-inline: auto !important;
+  }
+  .bannerInfo {
+    padding-bottom: 25px !important;
+  }
+  .buttonsContainer {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=diagnosisBannerComponent.module.css.map */

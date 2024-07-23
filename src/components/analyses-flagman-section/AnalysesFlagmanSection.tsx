@@ -1,14 +1,15 @@
-import { Box, Typography } from "@mui/material";
 import { FC } from "react";
-import { defaultAnalysesLinks } from "../../types/AnalysisLink";
 import { AnalysisLinkCard } from "../analysis-link-card/AnalysisLinkCard";
+import { defaultAnalysesLinks } from "../../types/AnalysisLink";
+import { Box, Typography } from "@mui/material";
+import styles from "./analysesFlagmanSection.module.css";
 
 export const AnalysesFlagmanSection: FC = () => {
   return (
     <>
-      <Box>
-        <Typography>Анализы</Typography>
-        <Box>
+      <Box className={styles.container}>
+        <Typography className={styles.containerTitle}>Анализы</Typography>
+        <Box className={styles.linkCardsContainer}>
           {defaultAnalysesLinks.map((link, id) => (
             <AnalysisLinkCard key={id} link={link} />
           ))}

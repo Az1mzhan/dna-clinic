@@ -7,4 +7,12 @@
   margin-top: 62px !important;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95% !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+}
+
 /*# sourceMappingURL=informationTilesContainer.module.css.map */

@@ -3,8 +3,10 @@
   gap: 20px !important
   justify-content: space-between !important
   align-items: center !important
-  width: 100% !important
-  padding: 0 !important
+  width: calc(100% - 84px) !important
+  min-height: 67px !important
+  margin-top: 20px !important
+  padding: 0 42px !important
   border-radius: 6px !important
   background-color: #fff !important
 
@@ -14,7 +16,7 @@
 @media (max-width: 991px)
 .container
   flex-wrap: wrap !important
-  padding: 0 20px !important
+  //padding: 0 20px !important
 
 .searchIcon
   aspect-ratio: 1.12 !important
@@ -26,10 +28,7 @@
   gap: 20px !important
   font-size: 18px !important
   color: var(--Main-Blue, #3c79ff) !important
-  font-weight: 700 !important
+  font-weight: bold !important
   text-transform: capitalize !important
-  letter-spacing: 0.9px !important
-  margin: auto 0 !important
-
-input.MuiInputBase-input.MuiOutlinedInput-input
-  padding: 0 !important
+  letter-spacing: 0.05em !important
+  line-height: 22px !important

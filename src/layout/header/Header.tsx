@@ -27,112 +27,34 @@ export const Header: FC = () => {
         <Toolbar
           sx={{
             justifyContent: {
-              xs: "space-between !important",
+              xs: "space-around !important",
               md: "flex-start !important",
             },
             width: "100%",
-            padding: "0 !important",
           }}
           disableGutters
         >
-          <Typography
-            className={styles.companyTitle}
-            sx={{
-              marginLeft: "5.9375vw !important",
-              fontSize: {
-                md: "25px !important",
-                lg: "30px !important",
-              },
-            }}
-          >
-            ДНК-КЛ
-          </Typography>
+          <Typography className={styles.companyTitle}>ДНК-КЛ</Typography>
           <Box
             className={styles.headerContent}
-            sx={{ display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none !important", md: "flex !important" } }}
           >
-            <Box
-              className={styles.phoneSection}
-              sx={{
-                marginLeft: {
-                  md: "0.25vw !important",
-                  lg: "5.078vw !important",
-                },
-              }}
-            >
-              <img src={phoneIcon} />
+            <Box className={styles.phoneSection}>
+              <img className={styles.phoneIcon} src={phoneIcon} />
               <Box className={styles.phoneContainer}>
-                <Typography
-                  className={styles.aroundClockLabel}
-                  sx={{
-                    fontSize: {
-                      md: "8px !important",
-                      lg: "9px !important",
-                    },
-                    fontWeight: {
-                      md: "bold !important",
-                      lg: "500 !important",
-                    },
-                  }}
-                >
+                <Typography className={styles.aroundClockLabel}>
                   Круглосуточная запись по телефону:
                 </Typography>
-                <Typography
-                  className={styles.aroundClockPhone}
-                  sx={{
-                    fontSize: {
-                      md: "17px !important",
-                      lg: "18px !important",
-                    },
-                  }}
-                >
+                <Typography className={styles.aroundClockPhone}>
                   +7 702 301 2796
                 </Typography>
               </Box>
             </Box>
             <Box className={styles.headerButtonsGroup}>
-              <Button
-                className="primaryBtn"
-                sx={{
-                  fontSize: {
-                    md: "9.2px !important",
-                    lg: "12.2px !important",
-                  },
-                }}
-              >
-                Вызвать врача на дом
-              </Button>
-              <Button
-                className="primaryBtn"
-                sx={{
-                  fontSize: {
-                    md: "9.2px !important",
-                    lg: "12.2px !important",
-                  },
-                }}
-              >
-                Скорая помощь
-              </Button>
-              <Button
-                className="secondaryBtn"
-                sx={{
-                  fontSize: {
-                    md: "9.2px !important",
-                    lg: "12.2px !important",
-                  },
-                }}
-              >
-                Записаться на прием
-              </Button>
-              <Button
-                className={styles.personalCabinetBtn}
-                sx={{
-                  fontSize: {
-                    md: "9.2px !important",
-                    lg: "12.2px !important",
-                  },
-                }}
-              >
+              <Button className="primaryBtn">Вызвать врача на дом</Button>
+              <Button className="primaryBtn">Скорая помощь</Button>
+              <Button className="secondaryBtn">Записаться на прием</Button>
+              <Button className={styles.personalCabinetBtn}>
                 <img src={personIcon} />
                 Личный кабинет
               </Button>
@@ -144,12 +66,11 @@ export const Header: FC = () => {
             onClick={handleDrawerToggle}
             sx={{
               display: { xs: "flex", md: "none" },
-              marginRight: "5.9375vw !important",
               color: "#3C79FF !important",
-              transition: "all .25s ease-out !important",
+              transition: "all .2s ease-out !important",
               "&:hover": {
                 backgroundColor: "transparent !important",
-                border: ".125vw solid #3C79FF !important",
+                border: "1px solid #3C79FF !important",
                 opacity: "0.75 !important",
               },
             }}
@@ -163,7 +84,7 @@ export const Header: FC = () => {
             onClose={handleDrawerToggle}
             PaperProps={{
               sx: {
-                width: { xs: "67.5vw", sm: "47.5vw" },
+                width: "250px !important",
                 display: { xs: "flex", md: "none" },
               },
             }}
@@ -173,9 +94,9 @@ export const Header: FC = () => {
               className={styles.headerContent}
               sx={{
                 flexDirection: "column-reverse",
-                gap: "3.75vh",
-                marginLeft: "3.75vw",
-                marginTop: "5vh",
+                gap: "15px",
+                marginLeft: "20px",
+                marginTop: "25px",
               }}
             >
               <Box
@@ -233,7 +154,7 @@ export const Header: FC = () => {
                 <Button
                   className="transparentBtn"
                   sx={{
-                    gap: "1.5vw",
+                    gap: "10px",
                     width: "fit-content !important",
                     paddingInline: "0 !important",
                     color: "black !important",

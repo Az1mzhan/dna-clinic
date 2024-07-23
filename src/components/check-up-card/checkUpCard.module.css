@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -43,12 +43,16 @@ button {
   border: none !important;
 }
 
+.card {
+  border-radius: 20px !important;
+}
+
 .cardImage {
   height: 255px !important;
 }
 
 .cardContent {
-  padding: 27px 2.422vw !important;
+  padding: 27px 31px !important;
   background-color: #3c79ff !important;
 }
 
@@ -70,7 +74,7 @@ button {
   width: 127px !important;
   height: 43px !important;
   background-color: #ff8c00 !important;
-  border-radius: 0.5vw !important;
+  border-radius: 10px !important;
 }
 
 /*# sourceMappingURL=checkUpCard.module.css.map */

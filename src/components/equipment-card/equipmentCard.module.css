@@ -19,7 +19,7 @@ button {
   height: 6.25vh !important;
   padding: 2.326% 4.762% !important;
   color: white !important;
-  border-radius: 3.255vw !important;
+  border-radius: 50px !important;
   font-family: "Inter", sans-serif !important;
   font-size: 12.2px !important;
   font-weight: bold !important;
@@ -44,7 +44,7 @@ button {
 }
 
 .equipmentCard {
-  width: 27.031vw !important;
+  width: 346px !important;
 }
 
 .cardImage {

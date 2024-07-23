@@ -3,7 +3,7 @@
 .header
   display: flex !important
   width: 100% !important
-  padding-top: 5vh !important
+  margin-top: 38px !important
 
 .headerContent
   display: flex !important
@@ -12,19 +12,24 @@
   background-color: black !important
 
 .companyTitle
-  margin-left: 5.9375vw !important
   color: #3C79FF
   font-size: 30px !important
   font-weight: 800 !important
   line-height: 36px !important
   letter-spacing: 0.05em !important
   text-align: left !important
-  white-space: nowrap
+  white-space: nowrap !important
 
 .phoneSection
-  display: flex
-  gap: 2.66%
+  display: flex !important
+  align-items: center
+  gap: 2px !important
+  margin-left: 65px !important
   margin-right: 0.86vw !important
+
+.phoneIcon
+  width: 28px !important
+  height: 31px !important
 
 .phoneContainer
   display: flex !important
@@ -52,27 +57,28 @@
   white-space: nowrap
 
 .headerButtonsGroup
-  margin-left: 1.092vw !important
+  margin-left: 11px !important
   display: flex !important
-  gap: 0.9375vw !important
+  gap: 12px !important
 
   button
+    height: 43px !important
     font-weight: bold !important
 
     &:first-child
-      width: 14.14vw !important
+      width: 181px !important
 
     &:nth-child(2)
-      width: 11.484vw !important
+      width: 147px !important
 
     &:nth-child(3)
-      width: 13.906vw !important
+      width: 178px !important
 
     &:nth-child(4)
-      width: 12.578vw !important
+      width: 161px !important
 
 .personalCabinetBtn
-  gap: .5vw
+  gap: 10px
   background-color: white !important
   color: styles.$primary-color !important
-  border: .125vw solid styles.$primary-color !important
+  border: 1px solid styles.$primary-color !important

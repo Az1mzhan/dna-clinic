@@ -1,6 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #fafafa !important;
+  font-family: "Inter", sans-serif !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.app-container {
+  max-width: 1131px !important;
+  margin: 0 auto !important;
+}
+
+button {
+  width: 12vw !important;
+  height: 6.25vh !important;
+  padding: 2.326% 4.762% !important;
+  color: white !important;
+  border-radius: 50px !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12.2px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  text-align: center !important;
+  line-height: 61px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap;
+}
+
+.primaryBtn {
+  background-color: #3c79ff !important;
+}
+
+.secondaryBtn {
+  background-color: #ff8c00 !important;
+}
+
+.transparentBtn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .medicsPage {
   width: 99.735% !important;
-  padding-bottom: 221px !important;
+  margin-bottom: 540px !important;
+}
+
+.pageTitle {
+  margin-top: 68px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 40px !important;
+  letter-spacing: 0.05em !important;
+  line-height: 61px !important;
+}
+
+.cardsContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 45px !important;
+  margin-top: 24px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .medicsPage {
+    width: 95% !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+  .cardsContainer {
+    text-align: left !important;
+  }
 }
 
 /*# sourceMappingURL=medicsPage.module.css.map */

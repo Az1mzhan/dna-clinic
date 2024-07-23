@@ -1,12 +1,11 @@
 @use "../../App" as styles
 
 .equipmentSection
-  width: 85.156vw !important
+  width: 100% !important
   margin-top: 32px !important
-  margin-bottom: 325px !important
+  margin-bottom: 104px !important
 
 .sectionTitle
-  width: 28.984vw !important
   font-family: styles.$montserrat-font !important
   font-weight: bold !important
   font-size: 40px !important
@@ -15,5 +14,14 @@
 
 .cardsContainer
   display: flex !important
-  gap: 2.969vw !important
+  gap: 38px !important
   margin-top: 61px !important
+
+@media screen and (max-width: 600px)
+  .equipmentSection
+    text-align: center !important
+
+  .cardsContainer
+    flex-direction: column !important
+    align-items: center !important
+    text-align: left !important

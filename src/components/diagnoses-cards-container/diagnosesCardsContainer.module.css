@@ -1,8 +1,15 @@
 .cardsContainer {
   display: flex !important;
   gap: 15px !important;
-  width: 92.031vw !important;
+  width: 100% !important;
   margin-top: 44px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .cardsContainer {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }
 
 /*# sourceMappingURL=diagnosesCardsContainer.module.css.map */

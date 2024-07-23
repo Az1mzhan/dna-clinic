@@ -5,14 +5,14 @@
   max-width: 100% !important
   min-height: 346px !important
   color: white !important
-  border-radius: 0.625vw !important
+  border-radius: 10px !important
 
 .bannerInfo
   padding-left: 26px !important
   padding-right: 61px !important
 
 .bannerImage
-  border-radius: 0.625vw !important
+  border-radius: 10px !important
 
 .bannerTitle
   margin-top: 33.75px !important
@@ -23,11 +23,10 @@
   line-height: 34px !important
 
 .titleDivider
-  width: 5.352vw !important
+  width: 68.51px !important
   height: 3px !important
   margin-top: 18px !important
   background-color: white !important
-  border-radius: 1.25vw !important
 
 .bannerDescription
   margin-top: 42px !important
@@ -40,13 +39,24 @@
 .buttonsContainer
   display: flex !important
   flex-wrap: wrap !important
-  column-gap: 1.016vw !important
+  column-gap: 13px !important
   row-gap: 16px !important
-  width: 39.063vw !important
+  width: 504px !important
   margin-top: 35px !important
 
   button
-    width: auto !important
     height: 34px !important
     padding: 0 !important
     background-color: white !important
+
+@media screen and (max-width: 600px)
+  .diagnosisBanner
+    flex-direction: column !important
+    width: 95% !important
+    margin-inline: auto !important
+
+  .bannerInfo
+    padding-bottom: 25px !important
+
+  .buttonsContainer
+    width: 100% !important

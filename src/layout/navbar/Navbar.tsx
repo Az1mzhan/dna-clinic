@@ -31,13 +31,17 @@ export const Navbar: FC = () => {
       <nav className={styles.container}>
         <TextField
           label="Поиск по сайту"
-          sx={{
-            marginLeft: { xs: "2.5vw", sm: "2.5vw", md: "2.5vw", lg: "5vw" },
-          }}
+          // sx={{
+          //   marginLeft: { xs: "2.5vw", sm: "2.5vw", md: "2.5vw", lg: "5vw" },
+          // }}
           InputLabelProps={{
             sx: {
+              top: "-5.75px !important",
+              height: "23px !important",
               color: "rgba(64, 64, 64, 0.53)",
-              fontFamily: "'Montserrat', sans-serif",
+              fontFamily: "'Montserrat', sans-serif !important",
+              fontWeight: "500 !important",
+              fontSize: "12px !important",
             },
           }}
           InputProps={{
@@ -47,18 +51,17 @@ export const Navbar: FC = () => {
               </InputAdornment>
             ),
             sx: {
-              backgroundColor: "#fafafa",
-              borderRadius: "5vw",
-              fontFamily: "'Montserrat', sans-serif",
+              width: "212px !important",
+              height: "38px !important",
+              backgroundColor: "#fafafa !important",
+              borderRadius: "20px !important",
             },
           }}
         />
         <Box
           className={styles.navLinks}
-          sx={{
-            display: { xs: "none", md: "flex" },
-            marginRight: { md: "1.25vw", lg: "5vw" },
-          }}
+          sx={{ display: { xs: "none !important", md: "flex !important" } }}
+          // marginRight: { md: "1.25vw", lg: "5vw" },
         >
           {navItems.map((item, index) => (
             <NavItem key={index} item={item} />
@@ -74,7 +77,7 @@ export const Navbar: FC = () => {
             transition: "all .25s ease-out !important",
             "&:hover": {
               backgroundColor: "transparent !important",
-              border: ".125vw solid #3C79FF !important",
+              // border: ".125vw solid #3C79FF !important",
               opacity: "0.75 !important",
             },
           }}
@@ -88,8 +91,8 @@ export const Navbar: FC = () => {
           onClose={handleDrawerToggle}
           PaperProps={{
             sx: {
-              width: { xs: "67.5vw", sm: "47.5vw" },
-              display: { xs: "flex", md: "none" },
+              width: "250px !important",
+              display: { xs: "flex !important", md: "none !important" },
               justifyContent: "center !important",
             },
           }}
@@ -99,8 +102,7 @@ export const Navbar: FC = () => {
             className={styles.navLinks}
             sx={{
               flexDirection: "column",
-              margin: "0 !important",
-              marginLeft: "5vw !important",
+              marginLeft: "20px !important",
             }}
           >
             {navItems.map((item, index) => (
